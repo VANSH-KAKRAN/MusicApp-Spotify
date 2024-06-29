@@ -13,7 +13,7 @@ function Menu({ toggle }) {
               <div className="container-fluid">
                 <a className="navbar-brand fw-bold" href="#">
                   <img
-                    src="src/src/images/spotify_in_black-removebg-preview.png"
+                    src="src/images/spotify_in_black-removebg-preview.png"
                     alt="Logo"
                     width="40"
                     height="40"
@@ -74,7 +74,7 @@ function Menu({ toggle }) {
       </div>
       <div className="component0">
         <div className="phone-text-sec">
-          <img className="phone-img" src="src/src/images/phone.png" alt="" />
+          <img className="phone-img" src="src/images/phone.png" alt="" />
           <div className="phone-text">
             <div className="text1">
               Play millions of songs <br /> and podcasts, for free.
@@ -91,7 +91,7 @@ function Menu({ toggle }) {
           <div className="logo-text">
             <div className="in-logo">
               <li>
-                <img src="src/src/images/logo1.png" alt="" />
+                <img src="src/images/logo1.png" alt="" />
               </li>
               <li className="logo-text1">Play your favorites.</li>
               <li className="logo-text2">
@@ -101,7 +101,7 @@ function Menu({ toggle }) {
             </div>
             <div className="in-logo">
               <li>
-                <img src="src/src/images/logo2.png" alt="" />
+                <img src="src/images/logo2.png" alt="" />
               </li>
               <li className="logo-text1">Playlists made easy.</li>
               <li className="logo-text2">
@@ -112,7 +112,7 @@ function Menu({ toggle }) {
 
             <div className="in-logo">
               <li>
-                <img src="src/src/images/logo3.png" alt="" />
+                <img src="src/images/logo3.png" alt="" />
               </li>
               <li className="logo-text1">Make it yours.</li>
               <li className="logo-text2">
@@ -121,7 +121,7 @@ function Menu({ toggle }) {
             </div>
             <div className="in-logo">
               <li>
-                <img src="src/src/images/logo4.png" alt="" />
+                <img src="src/images/logo4.png" alt="" />
               </li>
               <li className="logo-text1">Save mobile data.</li>
               <li className="logo-text2">
@@ -277,7 +277,7 @@ function Menu({ toggle }) {
           <div>
             <div className="navbar-brand fw-bold" href="#">
               <img
-                src="src/src/images/spotify_in_black-removebg-preview.png"
+                src="src/images/spotify_in_black-removebg-preview.png"
                 alt="Logo"
                 width="40"
                 height="40"
