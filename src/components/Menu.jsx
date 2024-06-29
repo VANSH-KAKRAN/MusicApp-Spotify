@@ -13,7 +13,7 @@ function Menu({ toggle }) {
               <div className="container-fluid">
                 <a className="navbar-brand fw-bold" href="#">
                   <img
-                    src="src/images/spotify_in_black-removebg-preview.png"
+                    src="../images/spotifylogo.png"
                     alt="Logo"
                     width="40"
                     height="40"
