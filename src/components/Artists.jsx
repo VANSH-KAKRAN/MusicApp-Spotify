@@ -14,7 +14,7 @@ export default function Artists({card1}) {
       <div className=" tog-singers">
               <li onClick={card1} className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer1.jpg" alt="" />
+                  <img className="singer" src="src/images/singer1.jpg" alt="" />
                   <br />
 
                   <span className="name">Arigit Singh</span>
@@ -38,7 +38,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer2.jpg" alt="" />
+                  <img className="singer" src="src/images/singer2.jpg" alt="" />
                   <br />
 
                   <span className="name">Krishna kumar</span>
@@ -62,7 +62,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer3.jpg" alt="" />
+                  <img className="singer" src="src/images/singer3.jpg" alt="" />
                   <br />
 
                   <span className="name">Neha Kakkar</span>
@@ -86,7 +86,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer4.jpg" alt="" />
+                  <img className="singer" src="src/images/singer4.jpg" alt="" />
                   <br />
 
                   <span className="name">Guru Randhava</span>
@@ -110,7 +110,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer5.jpg" alt="" />
+                  <img className="singer" src="src/images/singer5.jpg" alt="" />
                   <br />
 
                   <span className="name">Darshan Raval</span>
@@ -134,7 +134,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer6.jpg" alt="" />
+                  <img className="singer" src="src/images/singer6.jpg" alt="" />
                   <br />
 
                   <span className="name">Jubin Nautiyal</span>
@@ -158,7 +158,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer7.jpg" alt="" />
+                  <img className="singer" src="src/images/singer7.jpg" alt="" />
                   <br />
 
                   <span className="name">A R Rahman</span>
@@ -184,7 +184,7 @@ export default function Artists({card1}) {
                 <div className="image">
                   <img
                     className="singer"
-                    src="images/singer8himeshreshmiya.webp"
+                    src="src/images/singer8himeshreshmiya.webp"
                     alt=""
                   />
                   <br />
@@ -210,7 +210,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer9.webp" alt="" />
+                  <img className="singer" src="src/images/singer9.webp" alt="" />
                   <br />
 
                   <span className="name">Diljeet Dusanjh</span>
@@ -234,7 +234,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer10.webp" alt="" />
+                  <img className="singer" src="src/images/singer10.webp" alt="" />
                   <br />
 
                   <span className="name">Ammy Virk</span>
@@ -258,7 +258,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer11.jpg" alt="" />
+                  <img className="singer" src="src/images/singer11.jpg" alt="" />
                   <br />
 
                   <span className="name">Siddhu </span>
@@ -282,7 +282,7 @@ export default function Artists({card1}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="singer" src="images/singer12.jpg" alt="" />
+                  <img className="singer" src="src/images/singer12.jpg" alt="" />
                   <br />
 
                   <span className="name">Jassi Gill</span>

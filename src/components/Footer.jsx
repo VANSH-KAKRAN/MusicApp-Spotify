@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <a className="navbar-brand fw-bold" href="#">
             <img
-              src="images/spotify_in_black-removebg-preview.png"
+              src="src/src/images/spotify_in_black-removebg-preview.png"
               alt="Logo"
               width="40"
               height="40"

@@ -11,7 +11,7 @@ export default function Minicompsecond({toggle2}) {
             <div className="singers">
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album1.jpg" alt="" />
+                  <img className="albums" src="src/images/album1.jpg" alt="" />
                   <br />
 
                   <span className="name">Animal</span>
@@ -35,7 +35,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album2.jpg" alt="" />
+                  <img className="albums" src="src/images/album2.jpg" alt="" />
                   <br />
 
                   <span className="name">Aashiqui 2</span>
@@ -59,7 +59,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album3.jpg" alt="" />
+                  <img className="albums" src="src/images/album3.jpg" alt="" />
                   <br />
 
                   <span className="name">Ye javani hai..</span>
@@ -83,7 +83,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album4.jpg" alt="" />
+                  <img className="albums" src="src/images/album4.jpg" alt="" />
                   <br />
 
                   <span className="name">Still Rolin</span>
@@ -107,7 +107,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album5.jpg" alt="" />
+                  <img className="albums" src="src/images/album5.jpg" alt="" />
                   <br />
 
                   <span className="name">Ae dil hai muskil</span>
@@ -131,7 +131,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album6.jpg" alt="" />
+                  <img className="albums" src="src/images/album6.jpg" alt="" />
                   <br />
 
                   <span className="name">Sanju</span>
@@ -155,7 +155,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album7.jpg" alt="" />
+                  <img className="albums" src="src/images/album7.jpg" alt="" />
                   <br />
 
                   <span className="name">Tamasha</span>
@@ -181,7 +181,7 @@ export default function Minicompsecond({toggle2}) {
                 <div className="image">
                   <img
                     className="albums"
-                    src="images/album8.jpg"
+                    src="src/images/album8.jpg"
                     alt=""
                   />
                   <br />
@@ -207,7 +207,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album9.jpg" alt="" />
+                  <img className="albums" src="src/images/album9.jpg" alt="" />
                   <br />
 
                   <span className="name">Ek Villain</span>
@@ -231,7 +231,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album10.webp" alt="" />
+                  <img className="albums" src="src/images/album10.webp" alt="" />
                   <br />
 
                   <span className="name">Kalank</span>
@@ -255,7 +255,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album11.jpg" alt="" />
+                  <img className="albums" src="src/images/album11.jpg" alt="" />
                   <br />
 
                   <span className="name">Dilwale</span>
@@ -279,7 +279,7 @@ export default function Minicompsecond({toggle2}) {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album12.jpg" alt="" />
+                  <img className="albums" src="src/images/album12.jpg" alt="" />
                   <br />
 
                   <span className="name">Street Dancer</span>

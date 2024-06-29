@@ -12,7 +12,7 @@ export default function Leftside() {
                 <a className="navbar-brand fw-bold" href="#">
                   &nbsp;
                   <img
-                    src="images/spotify_in_black-removebg-preview.png"
+                    src="src/images/spotify_in_black-removebg-preview.png"
                     alt="Logo"
                     width="25"
                     height="25"

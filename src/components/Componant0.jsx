@@ -5,7 +5,7 @@ function Componant0({toggle}) {
   return (
     <div className="component0">
       <div className="phone-text-sec">
-        <img className="phone-img" src="images/phone.png" alt="" />
+        <img className="phone-img" src="src/images/phone.png" alt="" />
         <div className="phone-text">
           <div className="text1">
             Play millions of songs <br /> and podcasts, for free.
