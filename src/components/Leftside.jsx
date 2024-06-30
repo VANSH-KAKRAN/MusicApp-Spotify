@@ -1,5 +1,6 @@
 import React from 'react'
 import './Menu.css'
+import spotifylogo from "/images/spotifylogo.png";
 
 export default function Leftside() {
   return (
@@ -12,7 +13,7 @@ export default function Leftside() {
                 <a className="navbar-brand fw-bold" href="#">
                   &nbsp;
                   <img
-                    src="images/spotify_in_black-removebg-preview.png"
+                    src={spotifylogo}
                     alt="Logo"
                     width="25"
                     height="25"
