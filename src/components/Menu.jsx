@@ -1,6 +1,6 @@
 import React from "react";
 import "./Menu.css";
-import spotifylogo from './spotifylogo.png';
+import spotifylogo from "/images/spotifylogo.png"
 
 function Menu({ toggle }) {
  
