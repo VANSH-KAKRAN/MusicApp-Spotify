@@ -3,6 +3,19 @@ import "./Menu.css";
 import "./Toggle.css";
 import { useState } from "react";
 
+import singer1 from "/images/singer1.jpg";
+import singer2 from "/images/singer2.jpg";
+import singer3 from "/images/singer3.jpg";
+import singer4 from "/images/singer4.jpg";
+import singer5 from "/images/singer5.jpg";
+import singer6 from "/images/singer6.jpg";
+import singer7 from "/images/singer7.jpg";
+import singer8 from "/images/singer8himeshreshmiya.webp";
+import singer9 from "/images/singer9.webp";
+import singer10 from "/images/singer10.webp";
+import singer11 from "/images/singer11.jpg";
+import singer12 from "/images/singer12.jpg";
+
 export default function Minicomp({ togglee,card1,card2 }) {
  
 
@@ -18,7 +31,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
       <div id="Singers1" className={`singers`}>
         <li onClick={card1} id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer1.jpg" alt="" />
+            <img className="singer" src={singer1} alt="" />
             <br />
             <span className="name">Arigit Singh</span>
             <span className="artist">Artist</span>
@@ -40,7 +53,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li onClick={card2} id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer2.jpg" alt="" />
+            <img className="singer" src={singer2} alt="" />
             <br />
 
             <span className="name">Krishna kumar</span>
@@ -64,7 +77,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer3.jpg" alt="" />
+            <img className="singer" src={singer3} alt="" />
             <br />
 
             <span className="name">Neha Kakkar</span>
@@ -88,7 +101,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer4.jpg" alt="" />
+            <img className="singer" src={singer4} alt="" />
             <br />
 
             <span className="name">Guru Randhava</span>
@@ -112,7 +125,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer5.jpg" alt="" />
+            <img className="singer" src={singer5} alt="" />
             <br />
 
             <span className="name">Darshan Raval</span>
@@ -136,7 +149,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer6.jpg" alt="" />
+            <img className="singer" src={singer6} alt="" />
             <br />
 
             <span className="name">Jubin Nautiyal</span>
@@ -160,7 +173,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer7.jpg" alt="" />
+            <img className="singer" src={singer7} alt="" />
             <br />
 
             <span className="name">A R Rahman</span>
@@ -186,7 +199,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
           <div className="image">
             <img
               className="singer"
-              src="images/singer8himeshreshmiya.webp"
+              src={singer8}
               alt=""
             />
             <br />
@@ -212,7 +225,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer9.webp" alt="" />
+            <img className="singer" src={singer9} alt="" />
             <br />
 
             <span className="name">Diljeet Dusanjh</span>
@@ -236,7 +249,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer10.webp" alt="" />
+            <img className="singer" src={singer10} alt="" />
             <br />
 
             <span className="name">Ammy Virk</span>
@@ -260,7 +273,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer11.jpg" alt="" />
+            <img className="singer" src={singer11} alt="" />
             <br />
 
             <span className="name">Siddhu </span>
@@ -284,7 +297,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
         </li>
         <li id="singer-box">
           <div className="image">
-            <img className="singer" src="images/singer12.jpg" alt="" />
+            <img className="singer" src={singer12} alt="" />
             <br />
 
             <span className="name">Jassi Gill</span>
