@@ -6,6 +6,9 @@ import logo1 from "/images/logo1.png";
 import logo2 from "/images/logo2.png";
 import logo3 from "/images/logo3.png";
 import logo4 from "/images/logo4.png";
+import nextbackground1 from "/images/nextbackground1.png";
+import nextbackground from "/images/nextbackground.png";
+
 
 function Menu({ toggle }) {
  
@@ -144,7 +147,7 @@ function Menu({ toggle }) {
         <br />
       </div>
       <div>
-        <div className="itsFree">
+        <div className="itsFree" style={{backgroundImage:`url(${nextbackground1})`}}>
           It's free <br />
           No credit card required
         </div>
@@ -269,7 +272,7 @@ function Menu({ toggle }) {
           <br />
           <br />
         </div>
-        <div className="readyPlay">
+        <div className="readyPlay" style={{backgroundImage:`url(${nextbackground})`}}>
           <div className="last">
             <div className="ready">Ready? Let’s play.</div>
             <button onClick={toggle} className="get-spotify last-button">

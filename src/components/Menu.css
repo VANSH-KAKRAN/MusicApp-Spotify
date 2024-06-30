@@ -1,3 +1,5 @@
+
+
 .mainss{
   padding-top: 10px;
   padding-left: 10px;
@@ -196,7 +198,8 @@ a {
 
 .itsFree {
   height: 400px;
-  background-image: url("images/nextbackground1.png");
+  /* background-image: url("images/nextbackground1.png"); */
+  /* background-image: url({nextbackground1}); */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -275,7 +278,7 @@ a {
   text-align: center;
 }
 .readyPlay {
-  background-image: url(images/backgroundlast.png);
+  /* background-image: url(images/backgroundlast.png); */
   background-repeat: no-repeat;
 }
 .footer-full {
