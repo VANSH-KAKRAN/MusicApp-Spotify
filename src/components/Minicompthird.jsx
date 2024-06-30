@@ -7,6 +7,7 @@ import radio5 from "/images/radio5.jpg";
 import radio6 from "/images/radio6.jpg";
 import radio7 from "/images/radio7.jpg";
 import radio8 from "/images/radio8.jpg";
+
 export default function Minicompthird({ toggle3 }) {
   return (
     <div>

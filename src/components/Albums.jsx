@@ -1,4 +1,16 @@
 import React from 'react'
+import album1 from "/images/album1.jpg";
+import album2 from "/images/album2.jpg";
+import album3 from "/images/album3.jpg";
+import album4 from "/images/album4.jpg";
+import album5 from "/images/album5.jpg";
+import album6 from "/images/album6.jpg";
+import album7 from "/images/album7.jpg";
+import album8 from "/images/album8.jpg";
+import album9 from "/images/album9.jpg";
+import album10 from "/images/album10.jpg";
+import album11 from "/images/album11.jpg";
+import album12 from "/images/album12.jpg";
 
 export default function Albums() {
   return (
@@ -10,7 +22,7 @@ export default function Albums() {
      <div className="tog-singers">
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album1.jpg" alt="" />
+                  <img className="albums" src={album1} alt="" />
                   <br />
 
                   <span className="name">Animal</span>
@@ -34,7 +46,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album2.jpg" alt="" />
+                  <img className="albums" src={album2} alt="" />
                   <br />
 
                   <span className="name">Aashiqui 2</span>
@@ -58,7 +70,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album3.jpg" alt="" />
+                  <img className="albums" src={album3} alt="" />
                   <br />
 
                   <span className="name">Ye javani hai..</span>
@@ -82,7 +94,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album4.jpg" alt="" />
+                  <img className="albums" src={album4} alt="" />
                   <br />
 
                   <span className="name">Still Rolin</span>
@@ -106,7 +118,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album5.jpg" alt="" />
+                  <img className="albums" src={album5} alt="" />
                   <br />
 
                   <span className="name">Ae dil hai muskil</span>
@@ -130,7 +142,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album6.jpg" alt="" />
+                  <img className="albums" src={album6} alt="" />
                   <br />
 
                   <span className="name">Sanju</span>
@@ -154,7 +166,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album7.jpg" alt="" />
+                  <img className="albums" src={album7} alt="" />
                   <br />
 
                   <span className="name">Tamasha</span>
@@ -180,7 +192,7 @@ export default function Albums() {
                 <div className="image">
                   <img
                     className="albums"
-                    src="images/album8.jpg"
+                    src={album8}
                     alt=""
                   />
                   <br />
@@ -206,7 +218,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album9.jpg" alt="" />
+                  <img className="albums" src={album9} alt="" />
                   <br />
 
                   <span className="name">Ek Villain</span>
@@ -230,7 +242,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album10.jpg" alt="" />
+                  <img className="albums" src={album10} alt="" />
                   <br />
 
                   <span className="name">Kalank</span>
@@ -254,7 +266,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album11.jpg" alt="" />
+                  <img className="albums" src={album11} alt="" />
                   <br />
 
                   <span className="name">Dilwale</span>
@@ -278,7 +290,7 @@ export default function Albums() {
               </li>
               <li className="singer-box">
                 <div className="image">
-                  <img className="albums" src="images/album12.jpg" alt="" />
+                  <img className="albums" src={album12} alt="" />
                   <br />
 
                   <span className="name">Street Dancer</span>
