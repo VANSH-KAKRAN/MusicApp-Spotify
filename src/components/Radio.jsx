@@ -1,12 +1,12 @@
 import React from "react";
-import radio1 from "/images/radio1.jpg";
-import radio2 from "/images/radio2.jpg";
-import radio3 from "/images/radio3.jpg";
-import radio4 from "/images/radio4.jpg";
-import radio5 from "/images/radio5.jpg";
-import radio6 from "/images/radio6.jpg";
-import radio7 from "/images/radio7.jpg";
-import radio8 from "/images/radio8.jpg";
+import radio1 from "/images/radio1.png";
+import radio2 from "/images/radio2.png";
+import radio3 from "/images/radio3.png";
+import radio4 from "/images/radio4.png";
+import radio5 from "/images/radio5.png";
+import radio6 from "/images/radio6.png";
+import radio7 from "/images/radio7.png";
+import radio8 from "/images/radio8.png";
 
 export default function Radio() {
   return (
