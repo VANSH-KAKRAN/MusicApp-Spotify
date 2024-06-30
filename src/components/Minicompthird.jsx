@@ -1,5 +1,12 @@
 import React from "react";
-
+import radio1 from "/images/radio1.jpg";
+import radio2 from "/images/radio2.jpg";
+import radio3 from "/images/radio3.jpg";
+import radio4 from "/images/radio4.jpg";
+import radio5 from "/images/radio5.jpg";
+import radio6 from "/images/radio6.jpg";
+import radio7 from "/images/radio7.jpg";
+import radio8 from "/images/radio8.jpg";
 export default function Minicompthird({ toggle3 }) {
   return (
     <div>
@@ -13,7 +20,7 @@ export default function Minicompthird({ toggle3 }) {
         <div className="singers">
           <li className="singer-box">
             <div className="image">
-              <img className="albums" src="images/radio1.png" alt="" />
+              <img className="albums" src={radio1} alt="" />
               <br />
 
               <span className="name">Arijit Singh</span>
@@ -37,7 +44,7 @@ export default function Minicompthird({ toggle3 }) {
           </li>
           <li className="singer-box">
             <div className="image">
-              <img className="albums" src="images/radio2.png" alt="" />
+              <img className="albums" src={radio2} alt="" />
               <br />
 
               <span className="name">A.r Rahman</span>
@@ -61,7 +68,7 @@ export default function Minicompthird({ toggle3 }) {
           </li>
           <li className="singer-box">
             <div className="image">
-              <img className="albums" src="images/radio3.png" alt="" />
+              <img className="albums" src={radio3} alt="" />
               <br />
 
               <span className="name">Diljeet Dosanjh</span>
@@ -85,7 +92,7 @@ export default function Minicompthird({ toggle3 }) {
           </li>
           <li className="singer-box">
             <div className="image">
-              <img className="albums" src="images/radio4.png" alt="" />
+              <img className="albums" src={radio4} alt="" />
               <br />
 
               <span className="name">Krishan Kumar</span>
@@ -109,7 +116,7 @@ export default function Minicompthird({ toggle3 }) {
           </li>
           <li className="singer-box">
             <div className="image">
-              <img className="albums" src="images/radio5.png" alt="" />
+              <img className="albums" src={radio5} alt="" />
               <br />
 
               <span className="name">Neha Kakkar</span>
@@ -133,7 +140,7 @@ export default function Minicompthird({ toggle3 }) {
           </li>
           <li className="singer-box">
             <div className="image">
-              <img className="albums" src="images/radio6.png" alt="" />
+              <img className="albums" src={radio6} alt="" />
               <br />
 
               <span className="name">Jassi Gill</span>
@@ -157,7 +164,7 @@ export default function Minicompthird({ toggle3 }) {
           </li>
           <li className="singer-box">
             <div className="image">
-              <img className="albums" src="images/radio7.png" alt="" />
+              <img className="albums" src={radio7} alt="" />
               <br />
 
               <span className="name">Jubin Nautriyal</span>
@@ -181,7 +188,7 @@ export default function Minicompthird({ toggle3 }) {
           </li>
           <li className="singer-box">
             <div className="image">
-              <img className="albums" src="images/radio8.png" alt="" />
+              <img className="albums" src={radio8} alt="" />
               <br />
 
               <span className="name"></span>
