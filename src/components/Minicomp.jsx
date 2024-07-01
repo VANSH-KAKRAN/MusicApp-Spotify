@@ -22,7 +22,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
   return (
     <div>
       <div className="popular-show">
-        <li className="popular-artists">Popular Artist</li>
+        <li className="popular-artists">Popular Artists</li>
         <button onClick={togglee} className="showall">
           Show More
         </button>

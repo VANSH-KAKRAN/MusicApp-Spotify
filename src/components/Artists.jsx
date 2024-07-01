@@ -12,12 +12,12 @@ import singer9 from "/images/singer9.webp";
 import singer10 from "/images/singer10.webp";
 import singer11 from "/images/singer11.jpg";
 import singer12 from "/images/singer12.jpg";
-export default function Artists({card1}) {
+export default function Artists({card1,card2}) {
 
   return (
     <div>
       <div className="tog-popart">
-        Popular Artist
+        Popular Artists
       </div>
      
      
@@ -47,7 +47,7 @@ export default function Artists({card1}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li onClick={card2} className="singer-box">
                 <div className="image">
                   <img className="singer" src={singer2} alt="" />
                   <br />

@@ -12,6 +12,7 @@ import Minicompthird from "./Minicompthird";
 import Radio from "./Radio";
 import Singer1 from "./Cards/Singer1";
 import Singer2 from "./Cards/Singer2";
+import Secondfooter from "./Secondfooter";
 
 export default function Mains() {
   const [artists, setartists] = useState(false);
@@ -36,9 +37,7 @@ export default function Mains() {
     document.getElementById("hide2").style.display = "none";
   };
 
-
-
-  //these are the usestates which are being used in all of those cards 
+  //these are the usestates which are being used in all of those cards
   const [mpCard1, setmpCard1] = useState(false);
   const cardFunc1 = () => {
     setmpCard1((prev) => !prev);
@@ -57,7 +56,6 @@ export default function Mains() {
     document.getElementById("singerTwoSongs").style.display = "";
   };
 
-
   //till here
   return (
     <div id="router">
@@ -70,8 +68,6 @@ export default function Mains() {
           <div style={{ paddingTop: "13px", paddingLeft: "15px" }}>
             <nav aria-label="Page navigation example">
               <ul className="pagination">
-
-
                 {/* //this is the main back button */}
                 <li
                   className="page-item"
@@ -84,11 +80,10 @@ export default function Mains() {
                     document.getElementById("hide3").style.display = "";
                     document.getElementById("singerOneSongs").style.display =
                       "none";
-                      document.getElementById("singerTwoSongs").style.display = "none";
+                    document.getElementById("singerTwoSongs").style.display =
+                      "none";
                   }}
                 >
-
-
                   <a className="page-link" href="#" aria-label="Previous">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -131,8 +126,9 @@ export default function Mains() {
       {/* //this is for just main components different from cards of singers */}
       <div id="mini12">
         <div id="hide1">
-          
-          {artists ? (<Artists card2={cardFunc2} card1={cardFunc1} />) : (
+          {artists ? (
+            <Artists card2={cardFunc2} card1={cardFunc1} />
+          ) : (
             <Minicomp card1={cardFunc1} card2={cardFunc2} togglee={toggless} />
           )}
         </div>
@@ -141,6 +137,9 @@ export default function Mains() {
         </div>
         <div id="hide3">
           {radio ? <Radio /> : <Minicompthird toggle3={toggles3} />}
+        </div>
+        <div id="SecondFooter">
+          <Secondfooter />
         </div>
       </div>
     </div>
