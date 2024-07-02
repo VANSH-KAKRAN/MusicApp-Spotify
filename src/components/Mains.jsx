@@ -45,6 +45,9 @@ export default function Mains() {
     document.getElementById("hide3").style.display = "none";
     document.getElementById("hide2").style.display = "none";
     document.getElementById("singerOneSongs").style.display = "";
+    document.getElementById("SecondFooter").style.display = "none";
+
+    
   };
   const [mpCard2, setmpCard2] = useState(false);
   const cardFunc2 = () => {
@@ -54,6 +57,8 @@ export default function Mains() {
     document.getElementById("hide2").style.display = "none";
     document.getElementById("singerOneSongs").style.display = "none";
     document.getElementById("singerTwoSongs").style.display = "";
+    document.getElementById("SecondFooter").style.display = "none";
+
   };
 
   //till here
@@ -82,6 +87,8 @@ export default function Mains() {
                       "none";
                     document.getElementById("singerTwoSongs").style.display =
                       "none";
+    document.getElementById("SecondFooter").style.display = "";
+
                   }}
                 >
                   <a className="page-link" href="#" aria-label="Previous">

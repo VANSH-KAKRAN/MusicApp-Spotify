@@ -3,7 +3,7 @@ import "./Secondfooter.css";
 
 export default function Secondfooter() {
   return (
-    <div>
+    <div style={{    marginBottom :"20%"}}>
       <div className="Secondfooter">
         <ul>
           <div>

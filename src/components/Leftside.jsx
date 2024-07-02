@@ -58,8 +58,8 @@ export default function Leftside() {
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="25"
+                  height="25"
                   fill="currentColor"
                   className="bi bi-music-note-list"
                   viewBox="0 0 16 16"
@@ -72,16 +72,22 @@ export default function Leftside() {
                     d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5"
                   />
                 </svg>
-                &nbsp;&nbsp;&nbsp;Find Your Intrust
+                &nbsp;&nbsp;&nbsp;Your Library
               </div>
 
               <div className="left-2-2">
-                <li>Artist</li>
-                <li>Album</li>
-                <li>Radio</li>
-                <li>Charts</li>
-                <li>PLaylist</li>
-                <li>Episodes</li>
+               <div className="left-2-2in">
+                <li className="left-2-2-1">Create your first playlist</li>
+                <li className="left-2-2-2">It's easy we'll help you</li>
+                <button className="left-2-2-button">Create Playlist</button>
+               </div>
+              </div>
+              <div className="left-2-2">
+              <div className="left-2-2in">
+                <li className="left-2-2-1">Let's find out some podcast</li>
+                <li className="left-2-2-2">We'll keep you Updated</li>
+                <button className="left-2-2-button">Brouse Proadcast</button>
+               </div>
               </div>
             </div>
           </div>

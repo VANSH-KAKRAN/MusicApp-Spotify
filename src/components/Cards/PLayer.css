@@ -1,0 +1,98 @@
+.audio-player {
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    color: white;
+    background-color: rgb(30 29 29);
+    /* align-items: center; */
+    flex-direction: column;
+    display: flex;
+    width: 74.5vw;
+    /* z-index: 1; */
+    bottom: 10px;
+    position: fixed;
+    /* background-color: #232323; */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.audio-player svg{
+    color: wheat;
+}
+
+.player-controls {
+    margin-bottom: 10px;
+}
+
+.control-btn {
+    background-color: transparent;
+    border-radius: 100%;
+    /* background-color: #5cb85c; */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+  
+}
+
+.control-btn:hover {
+    background-color: rgb(213, 213, 201);
+}
+
+.progress-container {
+    width: 75%;
+    margin: auto;
+    height: 4px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: wheat;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.time-container {
+    display: flex;
+    justify-content: center;
+}
+
+.current-time, .duration {
+    margin: 0 5px;
+}
+
+.playlist {
+    color: white;
+    background-color: #393939;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    
+    /* overflow-y: auto; */
+    
+
+    
+}
+
+.playlist li {
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+.Popular-text{
+    padding-top: 30px;
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
