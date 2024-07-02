@@ -10,6 +10,8 @@ import Illhi from "/songs/Illahi.mp3"
 import Jaanisar from "/songs/Jaannisaar.mp3"
 import Omaahi from "/songs/Omaahi.mp3"
 import Qaafirana from "/songs/Qaafirana.mp3"
+// background-image: url(images/arigitsinghback.png)
+import arigitsinghback from "/images/arigitsinghback.png";
 
 export default function Singer1() {
 
@@ -32,7 +34,7 @@ export default function Singer1() {
   return (
     <div style={{ display: "none" }} id="singerOneSongs">
       <div className="Singer-song-player">
-        <div className="Singer1-Photo-area">
+        <div className="Singer1-Photo-area" style={{backgroundImage:`url(${arigitsinghback})`}}>
           <div className="verified">
             <svg
               xmlns="http://www.w3.org/2000/svg"
