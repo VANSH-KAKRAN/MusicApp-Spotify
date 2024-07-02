@@ -24,8 +24,15 @@
 .player-controls {
     margin-bottom: 10px;
 }
-
+.PlayPausebutton{
+    color: rgb(0, 0, 0) !important;
+    background-color: wheat !important;
+    border-radius: 50%;
+    width: 100px;
+}
 .control-btn {
+  
+    
     background-color: transparent;
     border-radius: 100%;
     /* background-color: #5cb85c; */
@@ -41,7 +48,7 @@
 }
 
 .progress-container {
-    width: 75%;
+    width: 50%;
     margin: auto;
     height: 4px;
     background-color: #f0f0f0;

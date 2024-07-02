@@ -36,6 +36,10 @@
   padding-top: 3px;
   color: #adadad;
 }
+.Secondfooter li:hover{
+  text-decoration: underline;
+  color: wheat;
+}
 .Secondfooter li svg {
   border-radius: 50%;
   color: white;
