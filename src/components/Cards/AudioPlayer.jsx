@@ -66,13 +66,30 @@ const AudioPlayer = ({ songs }) => {
       `${durationMinutes}:${durationSeconds < 10 ? "0" : ""}${durationSeconds}`
     );
   };
+  const Pauselogo = () => {
 
+
+      document.getElementById("PauseButton").style.display="";
+      document.getElementById("PlayButton").style.display="none";
+    
+  
+
+  };
+  const Playlogo = () => {
+    document.getElementById("PlayButton").style.display="";
+    document.getElementById("PauseButton").style.display="none";
+    
+  };
   return (
     <div>
       <div className="Play-follow3d">
         <li>
-          <svg style={{backgroundColor: "wheat", color:"white",borderRadius:"50%"
-    }}
+          <svg
+            style={{
+              backgroundColor: "wheat",
+              color: "white",
+              borderRadius: "50%",
+            }}
             id="PLayButton"
             className=" PLayButton"
             xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +176,9 @@ const AudioPlayer = ({ songs }) => {
             </svg>
           </button>
           <button onClick={togglePlay} className="control-btn">
-            <svg
+            {isPlaying ? "Pause" : "play"}
+            {/* <svg
+              id="playButton"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -168,7 +187,17 @@ const AudioPlayer = ({ songs }) => {
               viewBox="0 0 16 16"
             >
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
-            </svg>
+            </svg >
+            <svg style={{display:"none"}} id="PauseButton"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-pause-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5" />
+            </svg> */}
           </button>
           <button onClick={nextTrack} className="control-btn">
             <svg
@@ -184,11 +213,13 @@ const AudioPlayer = ({ songs }) => {
           </button>
         </div>
         <div className="PlayPause">
-
-        <div className="">{currentTime}</div>
-        <div className="progress-container">
-          <div className="progress-bar" style={{ width: `${progress}%` }}></div>
-        </div>
+          <div className="">{currentTime}</div>
+          <div className="progress-container">
+            <div
+              className="progress-bar"
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
           {/* <div className="">{duration}</div> */}
           <div className="">{duration}</div>
         </div>
