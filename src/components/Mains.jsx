@@ -23,6 +23,7 @@ import Singer9 from "./Cards/Singer9";
 import Singer10 from "./Cards/Singer10";
 import Singer11 from "./Cards/Singer11";
 import Singer12 from "./Cards/Singer12";
+import Loginpage from "./Loginpage";
 
 export default function Mains() {
   const [artists, setartists] = useState(false);
@@ -294,14 +295,22 @@ export default function Mains() {
     document.getElementById("singerNineSongs").style.display = "none";
     document.getElementById("singerTenSongs").style.display = "none";
     document.getElementById("singerElevenSongs").style.display = "none";
-    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "";
     document.getElementById("SecondFooter").style.display = "none";
+  };
+  const [login, setlogin] = useState(false);
+  const loginFunc = () => {
+    setlogin((prev) => !prev);
+    // document.getElementById("signlog").style.display = "none";
+    document.getElementById("comp1").style.display = "none";
+    document.getElementById("mini12").style.display = "none";
+    document.getElementById("LoginPage").style.display = "";
   };
 
   //till here
   return (
     <div id="router">
-      <div className="comp1">
+      <div id="comp1" className="comp1">
         <Leftside />
       </div>
       <div className="comp2"></div>
@@ -320,6 +329,8 @@ export default function Mains() {
                       (document.getElementById("hide1").style.display = "");
                     document.getElementById("hide2").style.display = "";
                     document.getElementById("hide3").style.display = "";
+                    document.getElementById("mini12").style.display = "";
+                    document.getElementById("LoginPage").style.display = "none";
                     document.getElementById("singerOneSongs").style.display =
                       "none";
                     document.getElementById("singerTwoSongs").style.display =
@@ -347,6 +358,7 @@ export default function Mains() {
                     document.getElementById("SecondFooter").style.display =
                       "none";
                     document.getElementById("SecondFooter").style.display = "";
+                    document.getElementById("comp1").style.display = "";
                   }}
                 >
                   <a className="page-link" href="#" aria-label="Previous">
@@ -379,11 +391,14 @@ export default function Mains() {
               </ul>
             </nav>
           </div>
-          <div className="signlog">
+          <div id="signlog" className="signlog">
             <button className="signup ">Sign Up</button>
-            <button className="login get-spotify">Log in</button>
+            <button className="login get-spotify" onClick={loginFunc}>
+              Log in
+            </button>
           </div>
         </div>
+        {login ? <Loginpage /> : <Loginpage />}
       </div>
       {/* this is for all the singers cards */}
       {mpCard1 ? <Singer1 /> : <Singer1 />}
@@ -398,7 +413,6 @@ export default function Mains() {
       {singer10card ? <Singer10 /> : <Singer10 />}
       {singer11card ? <Singer11 /> : <Singer11 />}
       {singer12card ? <Singer12 /> : <Singer12 />}
-
       {/* //this is for just main components different from cards of singers */}
       <div id="mini12">
         <div id="hide1">
