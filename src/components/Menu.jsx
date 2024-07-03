@@ -8,6 +8,8 @@ import logo3 from "/images/logo3.png";
 import logo4 from "/images/logo4.png";
 import nextbackground1 from "/images/nextbackground1.png";
 import nextbackground from "/images/nextbackground.png";
+import Background3 from "/images/background3.png";
+// background-image: url(images/background3.png);
 
 
 
@@ -84,7 +86,7 @@ function Menu({ toggle }) {
           </div>
         </nav>
       </div>
-      <div className="component0">
+      <div className="component0" style={{backgroundImage:`url(${Background3})`}}>
         <div className="phone-text-sec">
           <img className="phone-img" src={phonepng} alt="" />
           <div className="phone-text">
