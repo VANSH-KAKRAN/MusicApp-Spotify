@@ -301,7 +301,7 @@ export default function Mains() {
   const [login, setlogin] = useState(false);
   const loginFunc = () => {
     setlogin((prev) => !prev);
-    // document.getElementById("signlog").style.display = "none";
+    document.getElementById("signlog").style.display = "none";
     document.getElementById("comp1").style.display = "none";
     document.getElementById("mini12").style.display = "none";
     document.getElementById("LoginPage").style.display = "";
@@ -330,6 +330,7 @@ export default function Mains() {
                     document.getElementById("hide2").style.display = "";
                     document.getElementById("hide3").style.display = "";
                     document.getElementById("mini12").style.display = "";
+                    document.getElementById("signlog").style.display = "";
                     document.getElementById("LoginPage").style.display = "none";
                     document.getElementById("singerOneSongs").style.display =
                       "none";
