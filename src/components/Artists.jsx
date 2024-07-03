@@ -13,7 +13,7 @@ import singer9 from "/images/singer9.webp";
 import singer10 from "/images/singer10.webp";
 import singer11 from "/images/singer11.jpg";
 import singer12 from "/images/singer12.jpg";
-export default function Artists({ card1, card2,card3 }) {
+export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8,card9,card10,card11,card12 }) {
   return (
     <div>
       <div className="tog-popart">Popular Artists</div>
@@ -92,7 +92,7 @@ export default function Artists({ card1, card2,card3 }) {
               </div>
             </div>
           </li>
-          <li className="singer-box">
+          <li onClick={card4} className="singer-box">
             <div className="image">
               <img className="singer" src={singer4} alt="" />
               <br />
@@ -116,7 +116,7 @@ export default function Artists({ card1, card2,card3 }) {
               </div>
             </div>
           </li>
-          <li className="singer-box">
+          <li onClick={card5} className="singer-box">
             <div className="image">
               <img className="singer" src={singer5} alt="" />
               <br />
@@ -140,7 +140,7 @@ export default function Artists({ card1, card2,card3 }) {
               </div>
             </div>
           </li>
-          <li className="singer-box">
+          <li onClick={card6} className="singer-box">
             <div className="image">
               <img className="singer" src={singer6} alt="" />
               <br />
@@ -164,7 +164,7 @@ export default function Artists({ card1, card2,card3 }) {
               </div>
             </div>
           </li>
-          <li className="singer-box">
+          <li onClick={card7} className="singer-box">
             <div className="image">
               <img className="singer" src={singer7} alt="" />
               <br />
@@ -188,7 +188,7 @@ export default function Artists({ card1, card2,card3 }) {
               </div>
             </div>
           </li>
-          <li className="singer-box">
+          <li onClick={card8} className="singer-box">
             <div className="image">
               <img className="singer" src={singer8} alt="" />
               <br />
@@ -212,7 +212,7 @@ export default function Artists({ card1, card2,card3 }) {
               </div>
             </div>
           </li>
-          <li className="singer-box">
+          <li onClick={card9} className="singer-box">
             <div className="image">
               <img className="singer" src={singer9} alt="" />
               <br />
@@ -236,7 +236,7 @@ export default function Artists({ card1, card2,card3 }) {
               </div>
             </div>
           </li>
-          <li className="singer-box">
+          <li onClick={card10} className="singer-box">
             <div className="image">
               <img className="singer" src={singer10} alt="" />
               <br />
@@ -260,7 +260,7 @@ export default function Artists({ card1, card2,card3 }) {
               </div>
             </div>
           </li>
-          <li className="singer-box">
+          <li onClick={card11} className="singer-box">
             <div className="image">
               <img className="singer" src={singer11} alt="" />
               <br />
@@ -284,7 +284,7 @@ export default function Artists({ card1, card2,card3 }) {
               </div>
             </div>
           </li>
-          <li className="singer-box">
+          <li onClick={card12} className="singer-box">
             <div className="image">
               <img className="singer" src={singer12} alt="" />
               <br />

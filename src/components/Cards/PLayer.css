@@ -2,19 +2,17 @@
 
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
     color: white;
     background-color: rgb(12 11 11);
     /* align-items: center; */
     flex-direction: column;
     display: flex;
-    width: 74.5vw;
+    width: 74.6vw;
     /* z-index: 1; */
-    bottom: 10px;
+    bottom: 0px;
     position: fixed;
     /* background-color: #232323; */
     padding: 20px;
-   
     text-align: center;
 }
 .audio-player svg{

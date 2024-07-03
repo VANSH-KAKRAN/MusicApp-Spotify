@@ -16,7 +16,7 @@ import singer10 from "/images/singer10.webp";
 import singer11 from "/images/singer11.jpg";
 import singer12 from "/images/singer12.jpg";
 
-export default function Minicomp({ togglee,card1,card2,card3 }) {
+export default function Minicomp({ togglee,card1,card2,card3,card4,card5,card6,card7,card8,card9,card10,card11,card12}) {
  
 
   return (
@@ -99,7 +99,7 @@ export default function Minicomp({ togglee,card1,card2,card3 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card4} id="singer-box">
           <div className="image">
             <img className="singer" src={singer4} alt="" />
             <br />
@@ -123,7 +123,7 @@ export default function Minicomp({ togglee,card1,card2,card3 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card5} id="singer-box">
           <div className="image">
             <img className="singer" src={singer5} alt="" />
             <br />
@@ -147,7 +147,7 @@ export default function Minicomp({ togglee,card1,card2,card3 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card6} id="singer-box">
           <div className="image">
             <img className="singer" src={singer6} alt="" />
             <br />
@@ -171,7 +171,7 @@ export default function Minicomp({ togglee,card1,card2,card3 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card7} id="singer-box">
           <div className="image">
             <img className="singer" src={singer7} alt="" />
             <br />
@@ -195,7 +195,7 @@ export default function Minicomp({ togglee,card1,card2,card3 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card8} id="singer-box">
           <div className="image">
             <img
               className="singer"
@@ -223,7 +223,7 @@ export default function Minicomp({ togglee,card1,card2,card3 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card9} id="singer-box">
           <div className="image">
             <img className="singer" src={singer9} alt="" />
             <br />
@@ -247,7 +247,7 @@ export default function Minicomp({ togglee,card1,card2,card3 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card10} id="singer-box">
           <div className="image">
             <img className="singer" src={singer10} alt="" />
             <br />
@@ -271,7 +271,7 @@ export default function Minicomp({ togglee,card1,card2,card3 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card11} id="singer-box">
           <div className="image">
             <img className="singer" src={singer11} alt="" />
             <br />
@@ -295,7 +295,7 @@ export default function Minicomp({ togglee,card1,card2,card3 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card12} id="singer-box">
           <div className="image">
             <img className="singer" src={singer12} alt="" />
             <br />

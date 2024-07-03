@@ -10,10 +10,19 @@ import Albums from "./Albums";
 import "./Toggle.css";
 import Minicompthird from "./Minicompthird";
 import Radio from "./Radio";
+import Secondfooter from "./Secondfooter";
 import Singer1 from "./Cards/Singer1";
 import Singer2 from "./Cards/Singer2";
-import Secondfooter from "./Secondfooter";
 import Singer3 from "./Cards/Singer3";
+import Singer4 from "./Cards/Singer4";
+import Singer5 from "./Cards/Singer5";
+import Singer6 from "./Cards/Singer6";
+import Singer7 from "./Cards/Singer7";
+import Singer8 from "./Cards/Singer8";
+import Singer9 from "./Cards/Singer9";
+import Singer10 from "./Cards/Singer10";
+import Singer11 from "./Cards/Singer11";
+import Singer12 from "./Cards/Singer12";
 
 export default function Mains() {
   const [artists, setartists] = useState(false);
@@ -46,9 +55,18 @@ export default function Mains() {
     document.getElementById("hide3").style.display = "none";
     document.getElementById("hide2").style.display = "none";
     document.getElementById("singerOneSongs").style.display = "";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
     document.getElementById("SecondFooter").style.display = "none";
-
-    
   };
   const [mpCard2, setmpCard2] = useState(false);
   const cardFunc2 = () => {
@@ -58,8 +76,17 @@ export default function Mains() {
     document.getElementById("hide2").style.display = "none";
     document.getElementById("singerOneSongs").style.display = "none";
     document.getElementById("singerTwoSongs").style.display = "";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
     document.getElementById("SecondFooter").style.display = "none";
-
   };
   const [singer3card, setsinger3Card] = useState(false);
   const singer3Func = () => {
@@ -69,9 +96,206 @@ export default function Mains() {
     document.getElementById("hide2").style.display = "none";
     document.getElementById("singerOneSongs").style.display = "none";
     document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
     document.getElementById("singerThreeSongs").style.display = "";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
     document.getElementById("SecondFooter").style.display = "none";
-
+  };
+  const [singer4card, setsinger4Card] = useState(false);
+  const singer4Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+  };
+  const [singer5card, setsinger5Card] = useState(false);
+  const singer5Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+  };
+  const [singer6card, setsinger6Card] = useState(false);
+  const singer6Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+  };
+  const [singer7card, setsinger7Card] = useState(false);
+  const singer7Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+  };
+  const [singer8card, setsinger8Card] = useState(false);
+  const singer8Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+  };
+  const [singer9card, setsinger9Card] = useState(false);
+  const singer9Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+  };
+  const [singer10card, setsinger10Card] = useState(false);
+  const singer10Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+  };
+  const [singer11card, setsinger11Card] = useState(false);
+  const singer11Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+  };
+  const [singer12card, setsinger12Card] = useState(false);
+  const singer12Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
   };
 
   //till here
@@ -100,10 +324,29 @@ export default function Mains() {
                       "none";
                     document.getElementById("singerTwoSongs").style.display =
                       "none";
-                      document.getElementById("singerThreeSongs").style.display =
+                    document.getElementById("singerThreeSongs").style.display =
                       "none";
-    document.getElementById("SecondFooter").style.display = "";
-
+                    document.getElementById("singerFourSongs").style.display =
+                      "none";
+                    document.getElementById("singerFiveSongs").style.display =
+                      "none";
+                    document.getElementById("singerSixSongs").style.display =
+                      "none";
+                    document.getElementById("singerSevenSongs").style.display =
+                      "none";
+                    document.getElementById("singerEightSongs").style.display =
+                      "none";
+                    document.getElementById("singerNineSongs").style.display =
+                      "none";
+                    document.getElementById("singerTenSongs").style.display =
+                      "none";
+                    document.getElementById("singerElevenSongs").style.display =
+                      "none";
+                    document.getElementById("singerTwelveSongs").style.display =
+                      "none";
+                    document.getElementById("SecondFooter").style.display =
+                      "none";
+                    document.getElementById("SecondFooter").style.display = "";
                   }}
                 >
                   <a className="page-link" href="#" aria-label="Previous">
@@ -145,14 +388,51 @@ export default function Mains() {
       {/* this is for all the singers cards */}
       {mpCard1 ? <Singer1 /> : <Singer1 />}
       {mpCard2 ? <Singer2 /> : <Singer2 />}
-      {singer3card ? <Singer3/>:<Singer3/>}
+      {singer3card ? <Singer3 /> : <Singer3 />}
+      {singer4card ? <Singer4 /> : <Singer4 />}
+      {singer5card ? <Singer5 /> : <Singer5 />}
+      {singer6card ? <Singer6 /> : <Singer6 />}
+      {singer7card ? <Singer7 /> : <Singer7 />}
+      {singer8card ? <Singer8 /> : <Singer8 />}
+      {singer9card ? <Singer9 /> : <Singer9 />}
+      {singer10card ? <Singer10 /> : <Singer10 />}
+      {singer11card ? <Singer11 /> : <Singer11 />}
+      {singer12card ? <Singer12 /> : <Singer12 />}
+
       {/* //this is for just main components different from cards of singers */}
       <div id="mini12">
         <div id="hide1">
           {artists ? (
-            <Artists card3={singer3Func} card2={cardFunc2} card1={cardFunc1} />
+            <Artists
+              card12={singer12Func}
+              card11={singer11Func}
+              card10={singer10Func}
+              card9={singer9Func}
+              card8={singer8Func}
+              card7={singer7Func}
+              card6={singer6Func}
+              card5={singer5Func}
+              card4={singer4Func}
+              card3={singer3Func}
+              card2={cardFunc2}
+              card1={cardFunc1}
+            />
           ) : (
-            <Minicomp card1={cardFunc1} card2={cardFunc2} card3={singer3Func} togglee={toggless} />
+            <Minicomp
+              card1={cardFunc1}
+              card2={cardFunc2}
+              card3={singer3Func}
+              card12={singer12Func}
+              card11={singer11Func}
+              card10={singer10Func}
+              card9={singer9Func}
+              card8={singer8Func}
+              card7={singer7Func}
+              card6={singer6Func}
+              card5={singer5Func}
+              card4={singer4Func}
+              togglee={toggless}
+            />
           )}
         </div>
         <div id="hide2">

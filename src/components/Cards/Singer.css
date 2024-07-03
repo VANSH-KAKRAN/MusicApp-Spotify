@@ -6,6 +6,20 @@
   #singerOneSongs {
     max-height: 86vh;
     overflow: scroll;
+    animation: 0.5s ease 0s 1 normal none running grow;
+  }
+  @keyframes grow {
+    0% {
+      width: 0%;
+      height: 0px;
+      /* transform: scale(0.3); */
+    }
+    100% {
+      width: 100%;
+      height: 282px;
+      /* transform: scale(1);
+      border-radius: 0%; */
+    }
   }
   .singerTwoSongs{
     display: none;
@@ -16,6 +30,7 @@
   #singerTwoSongs{
     max-height: 86vh;
     overflow: scroll;
+    animation: 0.5s ease 0s 1 normal none running grow;
   }
 .Singer1-Bigimg{
     width: 76%;
@@ -29,7 +44,127 @@
 #singerThreeSongs{
   max-height: 86vh;
   overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
 }
+.singerFourSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerFourSongs{
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+
+.singerFiveSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerFiveSongs{
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerSixSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerSixSongs{
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerSevenSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerSevenSongs{
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerEightSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerEightSongs{
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerNineSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerNineSongs{
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerTenSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerTenSongs{
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerElevenSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerElevenSongs{
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerTwelveSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerTwelveSongs{
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Singer1-Photo-area{
   background-size: auto;
     background-repeat: no-repeat;
@@ -101,6 +236,8 @@
   }
   .Listing:hover{
     background-color: wheat;
+    color: black;
+    text-decoration: underline;
   }
   .App{
     display: flex;
