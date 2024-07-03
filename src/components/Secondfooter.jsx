@@ -79,7 +79,7 @@ export default function Secondfooter() {
       </div>
       <div className="SecondfooterBottom">
         <hr className="hr-line" />
-        <div className="SecondfooterBottom-text" style={{    paddingBottom :"20%"}}>
+        <div className="SecondfooterBottom-text" style={{    paddingBottom :"35%"}}>
         © 2024 Spotify AB
         </div>
       </div>

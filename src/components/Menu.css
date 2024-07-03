@@ -330,7 +330,7 @@ a {
   display: flex;
   /* max-width: 23%; */
   flex-direction: column;
-  background-color: rgb(30 29 29);
+  background-color: rgb(12 11 11);
 }
 .Mains-in-1 {
   padding-bottom: 10px;
@@ -339,6 +339,7 @@ a {
 }
 
 .left-2 {
+  height: 100vh;
   align-items: baseline;
   color: white;
   gap: 16px;
@@ -347,7 +348,7 @@ a {
   display: flex;
   /* max-width: 23%; */
   flex-direction: column;
-  background-color: rgb(30 29 29);
+  background-color: rgb(12 11 11);
   list-style: none;
 }
 .main-in-2 {
@@ -429,7 +430,7 @@ a {
   /* max-height: 98vh; */
   /* justify-content: left; */
   display: flex;
-  background-color: rgb(30 29 29);
+  background-color: rgb(12 11 11);
 }
 
 .singers {

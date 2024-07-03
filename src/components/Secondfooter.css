@@ -25,6 +25,10 @@
   justify-content: center;
   align-items: center;
 }
+.footerIcons li:hover{
+  background-color: rgb(171, 171, 171);
+  color: rgb(0, 0, 0);
+}
 .Secondfooter div {
   font-size: large;
     color: white;
@@ -42,8 +46,9 @@
 }
 .Secondfooter li svg {
   border-radius: 50%;
-  color: white;
+  color: rgb(0, 0, 0);
 }
+
 .SecondfooterBottom {
   background-color: #393939;
   padding-top: 35px;
