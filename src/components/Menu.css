@@ -20,6 +20,8 @@
 }
 
 #router {
+  overflow: hidden;
+  max-height: 99vh;
   margin: auto;
   max-width: 98%;
   padding-bottom: 1%;

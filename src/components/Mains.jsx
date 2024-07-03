@@ -13,6 +13,7 @@ import Radio from "./Radio";
 import Singer1 from "./Cards/Singer1";
 import Singer2 from "./Cards/Singer2";
 import Secondfooter from "./Secondfooter";
+import Singer3 from "./Cards/Singer3";
 
 export default function Mains() {
   const [artists, setartists] = useState(false);
@@ -60,6 +61,18 @@ export default function Mains() {
     document.getElementById("SecondFooter").style.display = "none";
 
   };
+  const [singer3card, setsinger3Card] = useState(false);
+  const singer3Func = () => {
+    setmpCard2((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "";
+    document.getElementById("SecondFooter").style.display = "none";
+
+  };
 
   //till here
   return (
@@ -86,6 +99,8 @@ export default function Mains() {
                     document.getElementById("singerOneSongs").style.display =
                       "none";
                     document.getElementById("singerTwoSongs").style.display =
+                      "none";
+                      document.getElementById("singerThreeSongs").style.display =
                       "none";
     document.getElementById("SecondFooter").style.display = "";
 
@@ -130,13 +145,14 @@ export default function Mains() {
       {/* this is for all the singers cards */}
       {mpCard1 ? <Singer1 /> : <Singer1 />}
       {mpCard2 ? <Singer2 /> : <Singer2 />}
+      {singer3card ? <Singer3/>:<Singer3/>}
       {/* //this is for just main components different from cards of singers */}
       <div id="mini12">
         <div id="hide1">
           {artists ? (
-            <Artists card2={cardFunc2} card1={cardFunc1} />
+            <Artists card3={singer3Func} card2={cardFunc2} card1={cardFunc1} />
           ) : (
-            <Minicomp card1={cardFunc1} card2={cardFunc2} togglee={toggless} />
+            <Minicomp card1={cardFunc1} card2={cardFunc2} card3={singer3Func} togglee={toggless} />
           )}
         </div>
         <div id="hide2">

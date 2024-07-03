@@ -7,9 +7,29 @@
     max-height: 86vh;
     overflow: scroll;
   }
+  .singerTwoSongs{
+    display: none;
+    max-height: 86vh;
+    overflow: scroll;
+  
+  }
+  #singerTwoSongs{
+    max-height: 86vh;
+    overflow: scroll;
+  }
 .Singer1-Bigimg{
     width: 76%;
 }  
+.singerThreeSongs{
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+
+}
+#singerThreeSongs{
+  max-height: 86vh;
+  overflow: scroll;
+}
 .Singer1-Photo-area{
   background-size: auto;
     background-repeat: no-repeat;

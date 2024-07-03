@@ -3,8 +3,8 @@ import "./Secondfooter.css";
 
 export default function Secondfooter() {
   return (
-    <div style={{    marginBottom :"20%"}}>
-      <div className="Secondfooter">
+    <div >
+      <div className="Secondfooter" >
         <ul>
           <div>
             Compony
@@ -79,7 +79,7 @@ export default function Secondfooter() {
       </div>
       <div className="SecondfooterBottom">
         <hr className="hr-line" />
-        <div className="SecondfooterBottom-text" >
+        <div className="SecondfooterBottom-text" style={{    paddingBottom :"20%"}}>
         © 2024 Spotify AB
         </div>
       </div>

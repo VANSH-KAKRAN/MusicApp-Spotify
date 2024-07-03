@@ -10,7 +10,6 @@ import Illhi from "/songs/Illahi.mp3"
 import Jaanisar from "/songs/Jaannisaar.mp3"
 import Omaahi from "/songs/Omaahi.mp3"
 import Qaafirana from "/songs/Qaafirana.mp3"
-// background-image: url(images/arigitsinghback.png)
 import arigitsinghback from "/images/arigitsinghback.png";
 
 export default function Singer1() {

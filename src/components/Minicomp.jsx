@@ -16,7 +16,7 @@ import singer10 from "/images/singer10.webp";
 import singer11 from "/images/singer11.jpg";
 import singer12 from "/images/singer12.jpg";
 
-export default function Minicomp({ togglee,card1,card2 }) {
+export default function Minicomp({ togglee,card1,card2,card3 }) {
  
 
   return (
@@ -75,7 +75,7 @@ export default function Minicomp({ togglee,card1,card2 }) {
             </div>
           </div>
         </li>
-        <li id="singer-box">
+        <li onClick={card3} id="singer-box">
           <div className="image">
             <img className="singer" src={singer3} alt="" />
             <br />
