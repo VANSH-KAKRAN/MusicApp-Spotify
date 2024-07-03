@@ -13,19 +13,17 @@
   align-items: stretch;
   padding-top: 2%;
   row-gap: 20px;
-  animation: ani 1s;
+  animation: ani 0.5s;
 }
 @keyframes ani {
   0% {
-    width: 0px;
-    /* transform: scale(0.3); */
+    height: 0vh;
+    
   }
   100% {
-    border-radius: 0%;
-    width: 100%;
+    height: 100vh;
 
-    /* transform: scale(1);
-    border-radius: 0%; */
+    
   }
 }
 .singer-box {
@@ -80,16 +78,4 @@
     max-height: 94vh;
 }
 
-@keyframes grow {
-  0% {
-    width: 0px;
-    /* transform: scale(0.3); */
-  }
-  100% {
-    border-radius: 0%;
-    width: 100%;
-    height: 100%;
-    /* transform: scale(1);
-    border-radius: 0%; */
-  }
-}
+

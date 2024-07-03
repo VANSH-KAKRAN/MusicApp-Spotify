@@ -31,8 +31,12 @@ const AudioPlayer = ({ songs }) => {
   // Go to the next track
   const nextTrack = () => {
     const newIndex = (currentTrack + 1) % songs.length;
+
     setCurrentTrack(newIndex);
+
     if (isPlaying) {
+      audioRef.current.play();
+    } else {
       audioRef.current.play();
     }
   };
@@ -41,6 +45,7 @@ const AudioPlayer = ({ songs }) => {
   const prevTrack = () => {
     const newIndex = (currentTrack - 1 + songs.length) % songs.length;
     setCurrentTrack(newIndex);
+
     if (isPlaying) {
       audioRef.current.play();
     }
@@ -66,7 +71,7 @@ const AudioPlayer = ({ songs }) => {
       `${durationMinutes}:${durationSeconds < 10 ? "0" : ""}${durationSeconds}`
     );
   };
- 
+
   return (
     <div>
       <div className="Play-follow3d">
