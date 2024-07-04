@@ -15,7 +15,7 @@ export default function Radio() {
         <li className="popular-artists">Popular Radio</li>
       </div>
       <div className="tog-singers">
-        <li className="singer-box">
+        <li id ="singer-box">
           <div className="image">
             <img className="albums" src={radio1} alt="" />
             <br />
@@ -39,7 +39,7 @@ export default function Radio() {
             </div>
           </div>
         </li>
-        <li className="singer-box">
+        <li id ="singer-box">
           <div className="image">
             <img className="albums" src={radio2} alt="" />
             <br />
@@ -63,7 +63,7 @@ export default function Radio() {
             </div>
           </div>
         </li>
-        <li className="singer-box">
+        <li id ="singer-box">
           <div className="image">
             <img className="albums" src={radio3} alt="" />
             <br />
@@ -87,7 +87,7 @@ export default function Radio() {
             </div>
           </div>
         </li>
-        <li className="singer-box">
+        <li id ="singer-box">
           <div className="image">
             <img className="albums" src={radio4} alt="" />
             <br />
@@ -111,7 +111,7 @@ export default function Radio() {
             </div>
           </div>
         </li>
-        <li className="singer-box">
+        <li id ="singer-box">
           <div className="image">
             <img className="albums" src={radio5} alt="" />
             <br />
@@ -135,7 +135,7 @@ export default function Radio() {
             </div>
           </div>
         </li>
-        <li className="singer-box">
+        <li id ="singer-box">
           <div className="image">
             <img className="albums" src={radio6} alt="" />
             <br />
@@ -159,7 +159,7 @@ export default function Radio() {
             </div>
           </div>
         </li>
-        <li className="singer-box">
+        <li id ="singer-box">
           <div className="image">
             <img className="albums" src={radio7} alt="" />
             <br />
@@ -183,7 +183,7 @@ export default function Radio() {
             </div>
           </div>
         </li>
-        <li className="singer-box">
+        <li id ="singer-box">
           <div className="image">
             <img className="albums" src={radio8} alt="" />
             <br />

@@ -21,14 +21,14 @@ export default function Minicompsecond({toggle2}) {
     <button onClick={toggle2} className='showall'>Show all</button>
      </div>
             <div className="singers">
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album1} alt="" />
                   <br />
 
                   <span className="name">Animal</span>
 
-                  <span className="artist">Bhupinder Babbal</span>
+                  <span className="artist">Bhupinder Ba..</span>
                 </div>
                 <div class="middle">
                   <div class="text">
@@ -45,7 +45,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album2} alt="" />
                   <br />
@@ -69,7 +69,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album3} alt="" />
                   <br />
@@ -93,7 +93,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album4} alt="" />
                   <br />
@@ -117,7 +117,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album5} alt="" />
                   <br />
@@ -141,7 +141,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album6} alt="" />
                   <br />
@@ -165,7 +165,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album7} alt="" />
                   <br />
@@ -189,7 +189,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img
                     className="albums"
@@ -217,7 +217,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album9} alt="" />
                   <br />
@@ -241,7 +241,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album10} alt="" />
                   <br />
@@ -265,7 +265,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album11} alt="" />
                   <br />
@@ -289,7 +289,7 @@ export default function Minicompsecond({toggle2}) {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album12} alt="" />
                   <br />

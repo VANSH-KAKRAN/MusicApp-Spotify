@@ -20,7 +20,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
 
       <div>
         <div className=" tog-singers">
-          <li onClick={card1} className="singer-box">
+          <li onClick={card1} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer1} alt="" />
               <br />
@@ -44,7 +44,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card2} className="singer-box">
+          <li onClick={card2} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer2} alt="" />
               <br />
@@ -68,7 +68,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card3} className="singer-box">
+          <li onClick={card3} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer3} alt="" />
               <br />
@@ -92,7 +92,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card4} className="singer-box">
+          <li onClick={card4} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer4} alt="" />
               <br />
@@ -116,7 +116,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card5} className="singer-box">
+          <li onClick={card5} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer5} alt="" />
               <br />
@@ -140,7 +140,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card6} className="singer-box">
+          <li onClick={card6} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer6} alt="" />
               <br />
@@ -164,7 +164,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card7} className="singer-box">
+          <li onClick={card7} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer7} alt="" />
               <br />
@@ -188,7 +188,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card8} className="singer-box">
+          <li onClick={card8} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer8} alt="" />
               <br />
@@ -212,7 +212,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card9} className="singer-box">
+          <li onClick={card9} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer9} alt="" />
               <br />
@@ -236,7 +236,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card10} className="singer-box">
+          <li onClick={card10} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer10} alt="" />
               <br />
@@ -260,7 +260,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card11} className="singer-box">
+          <li onClick={card11} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer11} alt="" />
               <br />
@@ -284,7 +284,7 @@ export default function Artists({card1,card2,card3,card4,card5,card6,card7,card8
               </div>
             </div>
           </li>
-          <li onClick={card12} className="singer-box">
+          <li onClick={card12} id ="singer-box">
             <div className="image">
               <img className="singer" src={singer12} alt="" />
               <br />

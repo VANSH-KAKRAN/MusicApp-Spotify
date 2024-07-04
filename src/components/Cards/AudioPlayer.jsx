@@ -146,8 +146,16 @@ const AudioPlayer = ({ songs }) => {
             key={index}
             onClick={() => setCurrentTrack(index)}
           >
-            <li>{song.title}</li>
-            <li>{song.popularity}</li>
+            <li className="SNumber">{song.Snumber}</li>
+            <ul>
+              <li className="Title">{song.title}</li>
+              <li className="ArtistName">
+                <li>{song.Artist1} ,<br /> </li>
+                <li>{song.Artist2} ,<br /> </li>
+                <li>{song.Artist3}</li>
+              </li>
+            </ul>
+            <li className="Popularity">{song.popularity}</li>
             <li>{song.time}</li>
           </ul>
         ))}

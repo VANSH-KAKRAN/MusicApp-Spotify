@@ -1,258 +1,259 @@
 .singerOneSongs {
-    display: none;
-    max-height: 86vh;
-    overflow: scroll;
+  display: none;
+  max-height: 90vh;
+  overflow: scroll;
+}
+#singerOneSongs {
+  max-height: 90vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+@keyframes grow {
+  0% {
+    height: 0vh;
+    border-radius: 100%;
   }
-  #singerOneSongs {
-    max-height: 86vh;
-    overflow: scroll;
-    animation: 0.5s ease 0s 1 normal none running grow;
-  }
-  @keyframes grow {
-    0% {
-      height: 0vh;
-      border-radius: 100%;
-     
-    }
-    100% {
-      height: 100vh;
-      border-radius: 0%;
-      /* transform: scale(1);
+  100% {
+    height: 100vh;
+    border-radius: 0%;
+    /* transform: scale(1);
       border-radius: 0%; */
-    }
   }
-  .singerTwoSongs{
-    display: none;
-    max-height: 86vh;
-    overflow: scroll;
-  
-  }
-  #singerTwoSongs{
-    max-height: 86vh;
-    overflow: scroll;
-    animation: 0.5s ease 0s 1 normal none running grow;
-  }
-.Singer1-Bigimg{
-    width: 76%;
-}  
-.singerThreeSongs{
+}
+.singerTwoSongs {
   display: none;
   max-height: 86vh;
   overflow: scroll;
-
 }
-#singerThreeSongs{
+#singerTwoSongs {
   max-height: 86vh;
   overflow: scroll;
   animation: 0.5s ease 0s 1 normal none running grow;
 }
-.singerFourSongs{
+.Singer1-Bigimg {
+  width: 76%;
+}
+.singerThreeSongs {
   display: none;
   max-height: 86vh;
   overflow: scroll;
-
 }
-#singerFourSongs{
+#singerThreeSongs {
   max-height: 86vh;
   overflow: scroll;
   animation: 0.5s ease 0s 1 normal none running grow;
 }
-
-.singerFiveSongs{
+.singerFourSongs {
   display: none;
   max-height: 86vh;
   overflow: scroll;
-
 }
-#singerFiveSongs{
-  max-height: 86vh;
-  overflow: scroll;
-  animation: 0.5s ease 0s 1 normal none running grow;
-}
-.singerSixSongs{
-  display: none;
-  max-height: 86vh;
-  overflow: scroll;
-
-}
-#singerSixSongs{
-  max-height: 86vh;
-  overflow: scroll;
-  animation: 0.5s ease 0s 1 normal none running grow;
-}
-.singerSevenSongs{
-  display: none;
-  max-height: 86vh;
-  overflow: scroll;
-
-}
-#singerSevenSongs{
-  max-height: 86vh;
-  overflow: scroll;
-  animation: 0.5s ease 0s 1 normal none running grow;
-}
-.singerEightSongs{
-  display: none;
-  max-height: 86vh;
-  overflow: scroll;
-
-}
-#singerEightSongs{
-  max-height: 86vh;
-  overflow: scroll;
-  animation: 0.5s ease 0s 1 normal none running grow;
-}
-.singerNineSongs{
-  display: none;
-  max-height: 86vh;
-  overflow: scroll;
-
-}
-#singerNineSongs{
-  max-height: 86vh;
-  overflow: scroll;
-  animation: 0.5s ease 0s 1 normal none running grow;
-}
-.singerTenSongs{
-  display: none;
-  max-height: 86vh;
-  overflow: scroll;
-
-}
-#singerTenSongs{
-  max-height: 86vh;
-  overflow: scroll;
-  animation: 0.5s ease 0s 1 normal none running grow;
-}
-.singerElevenSongs{
-  display: none;
-  max-height: 86vh;
-  overflow: scroll;
-
-}
-#singerElevenSongs{
-  max-height: 86vh;
-  overflow: scroll;
-  animation: 0.5s ease 0s 1 normal none running grow;
-}
-.singerTwelveSongs{
-  display: none;
-  max-height: 86vh;
-  overflow: scroll;
-
-}
-#singerTwelveSongs{
+#singerFourSongs {
   max-height: 86vh;
   overflow: scroll;
   animation: 0.5s ease 0s 1 normal none running grow;
 }
 
+.singerFiveSongs {
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+}
+#singerFiveSongs {
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerSixSongs {
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+}
+#singerSixSongs {
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerSevenSongs {
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+}
+#singerSevenSongs {
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerEightSongs {
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+}
+#singerEightSongs {
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerNineSongs {
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+}
+#singerNineSongs {
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerTenSongs {
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+}
+#singerTenSongs {
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerElevenSongs {
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+}
+#singerElevenSongs {
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
+.singerTwelveSongs {
+  display: none;
+  max-height: 86vh;
+  overflow: scroll;
+}
+#singerTwelveSongs {
+  max-height: 86vh;
+  overflow: scroll;
+  animation: 0.5s ease 0s 1 normal none running grow;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Singer1-Photo-area{
+.Singer1-Photo-area {
   background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-    display: flex;
-  
-    height: 282px;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: end;
-    gap: 40px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    color: #9e9585;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  display: flex;
+
+  height: 282px;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: end;
+  gap: 40px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  color: #9e9585;
 }
-.dropdown-item{
-    color: rgb(36, 35, 35) !important;
+.dropdown-item {
+  color: rgb(36, 35, 35) !important;
 }
-.Play-follow3d{
-    padding-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding-left: 30px;
-    gap: 35px;
+.Play-follow3d {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 30px;
+  gap: 35px;
 }
-.Singername{
-    font-size: xx-large;
-    color: white;
-    font-weight: 800;
-    font-family: "Work Sans", sans-serif;
+.Singername {
+  font-size: xx-large;
+  color: white;
+  font-weight: 800;
+  font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
 }
-.followBtn{
-    border: 1px solid white;
-    padding: 4px;
-    border-radius: 15px;
-    color: white;
-    background-color: transparent;
-    width: 90px;
-  }
-  #PlayButton{
-    background-color: brown;
-    color: aliceblue;
-    border-radius: 50%;
-    border: 2px solid white;
-  }
-  .PlayButton{
-    background-color: brown;
-    color: aliceblue;
-    border-radius: 50%;
-    border: 2px solid white;
+.followBtn {
+  border: 1px solid white;
+  padding: 4px;
+  border-radius: 15px;
+  color: white;
+  background-color: transparent;
+  width: 90px;
+}
+#PlayButton {
+  background-color: brown;
+  color: aliceblue;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.PlayButton {
+  background-color: brown;
+  color: aliceblue;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.Listing {
+  margin: auto;
+    max-width: 95%;
+    padding-inline-start: 3%;
+    padding-inline-end: 3%;
+    display: grid;
+    grid-template-columns: 1fr 40fr 20fr 1fr;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.Listing li {
+  display: flex;
+  align-items: center;
+}
+.Listing:hover {
+  background-color: #747474;
+  color: rgb(255, 255, 255);
+  transition: 0.5s ease-in-out;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #393939;
+}
+
+.bg-transparent {
+  color: white;
+}
+.PlayPause {
+  padding-right: 15%;
+  padding-left: 15%;
+  display: flex;
+}
+.ArtistName li:hover {
+  text-decoration: underline;
+}
+.Title {
+  font-weight: 600;
+  font-size: large;
+
+  color: white;
+}
+.Title:hover {
+  text-decoration: underline;
+}
+.Listing > li:hover {
+  text-decoration: underline;
+}
+.SNumber{
+  font-weight: 400;
+}
+.Popularity{
+  display: flex;
+}
+@media only screen and (max-width:600px){
+  .Popularity{
+    display: none !important;
+    
   }
   .Listing{
-    padding-top: 25px;
-    margin: auto;
-    max-width: 90%;
-    /* border: 1px solid white; */
-    justify-content: space-between;
-    /* gap: 40px; */
-    display: flex;
-    padding-right: 4%;
-    padding-bottom: 25px;
-    border-radius: 10px;
+    grid-template-columns: 1fr 40fr 1fr;
 
   }
-  .Listing:hover{
-    background-color: wheat;
-    color: black;
-    text-decoration: underline;
-  }
-  .App{
-    display: flex;
-    flex-direction: column;
-    
-    background-color: #393939;
-  }
- 
-  .bg-transparent{
-    color: white;
-  }
-  .PlayPause{
-    padding-right: 15%;
-    padding-left: 15%;
-    display: flex;
-
-
-  }
+}

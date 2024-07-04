@@ -1,5 +1,6 @@
 .audio-player {
 
+    padding-bottom: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     color: white;
@@ -12,7 +13,7 @@
     bottom: 0px;
     position: fixed;
     /* background-color: #232323; */
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
 }
 .audio-player svg{
@@ -20,13 +21,13 @@
 }
 
 .player-controls {
-    margin-bottom: 10px;
+    padding-top: 10px;
 }
 .PlayPausebutton{
     color: rgb(0, 0, 0) !important;
     background-color: wheat !important;
     border-radius: 50%;
-    width: 100px;
+   
 }
 .control-btn {
   
@@ -36,7 +37,7 @@
     /* background-color: #5cb85c; */
     color: #000;
     border: none;
-    padding: 10px 20px;
+   
     margin: 0 5px;
   
 }
@@ -79,7 +80,7 @@
     color: white;
     background-color: #393939;
     list-style-type: none;
-    padding: 0;
+    padding: 0 !important;
     margin-top: 10px;
     
     /* overflow-y: auto; */
@@ -90,7 +91,7 @@
 
 .playlist li {
     cursor: pointer;
-    padding: 5px;
+    
     transition: background-color 0.3s ease;
 }
 .Popular-text{

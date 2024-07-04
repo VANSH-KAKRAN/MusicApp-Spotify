@@ -20,7 +20,7 @@ export default function Albums() {
       </div>
       <div></div>
      <div className="tog-singers">
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album1} alt="" />
                   <br />
@@ -44,7 +44,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album2} alt="" />
                   <br />
@@ -68,7 +68,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album3} alt="" />
                   <br />
@@ -92,7 +92,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album4} alt="" />
                   <br />
@@ -116,7 +116,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album5} alt="" />
                   <br />
@@ -140,7 +140,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album6} alt="" />
                   <br />
@@ -164,7 +164,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album7} alt="" />
                   <br />
@@ -188,7 +188,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img
                     className="albums"
@@ -216,7 +216,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album9} alt="" />
                   <br />
@@ -240,7 +240,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album10} alt="" />
                   <br />
@@ -264,7 +264,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album11} alt="" />
                   <br />
@@ -288,7 +288,7 @@ export default function Albums() {
                   </div>
                 </div>
               </li>
-              <li className="singer-box">
+              <li id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album12} alt="" />
                   <br />
