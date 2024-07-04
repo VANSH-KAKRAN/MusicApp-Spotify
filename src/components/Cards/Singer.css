@@ -181,7 +181,7 @@
 }
 #PlayButton {
   background-color: brown;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 50%;
   border: 2px solid white;
 }
