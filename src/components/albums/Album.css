@@ -1,0 +1,36 @@
+.Lbum1-Photo-area{
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* height: 400px; */
+    display: flex;
+    background-color: #602d09;
+    color: white;
+    align-items: center;
+    box-shadow: inset 0px 15px 40px 1px #2c1a0d;
+
+}
+.AlbumImg{
+    box-shadow: 1px 2px 24px 5px #956e54;
+   
+    width: 17%;
+    height: 17%;
+    border-radius: 3%;
+}
+.AboutAlbum{
+    
+    padding-left: 3%;
+}
+.AboutAlbum li {
+    font-size: small;
+}
+.Singername{
+    font-size: 8vw;
+ 
+    color: white;
+    font-weight: 800;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* box-shadow: inset 0px 50px 24px -12px #2c1a0d; */

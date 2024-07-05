@@ -78,7 +78,7 @@ const AudioPlayer = ({ songs }) => {
         <li>
           <svg
             style={{
-              backgroundColor: "wheat",
+              backgroundColor: "black",
               color: "white",
               borderRadius: "50%",
             }}
@@ -151,6 +151,7 @@ const AudioPlayer = ({ songs }) => {
               fill="currentColor"
               class="bi bi-clock"
               viewBox="0 0 16 16"
+              style={{backgroundColor:"black"}}
               >
               <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
               <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
@@ -203,27 +204,6 @@ const AudioPlayer = ({ songs }) => {
           </button>
           <button onClick={togglePlay} className="PlayPausebutton control-btn">
             {isPlaying ? "Pause" : "play"}
-            {/* <svg
-              id="playButton"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-play-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
-            </svg >
-            <svg style={{display:"none"}} id="PauseButton"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-pause-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5" />
-            </svg> */}
           </button>
           <button onClick={nextTrack} className="control-btn">
             <svg

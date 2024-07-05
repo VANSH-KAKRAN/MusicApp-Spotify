@@ -13,7 +13,7 @@ import album10 from "/images/album10.jpg";
 import album11 from "/images/album11.jpg";
 import album12 from "/images/album12.jpg";
 
-export default function Minicompsecond({toggle2}) {
+export default function Minicompsecond({toggle2,albumtoggle1}) {
   return (
     <div>
       <div className="popular-show">
@@ -21,7 +21,7 @@ export default function Minicompsecond({toggle2}) {
     <button onClick={toggle2} className='showall'>Show all</button>
      </div>
             <div className="singers">
-              <li id ="singer-box">
+              <li onClick={albumtoggle1} id ="singer-box">
                 <div className="image">
                   <img className="albums" src={album1} alt="" />
                   <br />

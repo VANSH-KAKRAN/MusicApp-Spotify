@@ -24,6 +24,7 @@ import Singer10 from "./Cards/Singer10";
 import Singer11 from "./Cards/Singer11";
 import Singer12 from "./Cards/Singer12";
 import Loginpage from "./Loginpage";
+import Album1 from "./albums/Album1";
 
 export default function Mains() {
   const [artists, setartists] = useState(false);
@@ -308,6 +309,29 @@ export default function Mains() {
   };
 
   //till here
+
+  //Now the albums
+  const [album1, setAlbum1] = useState(false);
+  const album1Func = () => {
+    setAlbum1((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+    document.getElementById("ALBUM1").style.display = "";
+  };
   return (
     <div id="router">
       <div id="comp1" className="comp1">
@@ -360,6 +384,10 @@ export default function Mains() {
                       "none";
                     document.getElementById("SecondFooter").style.display = "";
                     document.getElementById("comp1").style.display = "";
+                    
+
+                    // now the albums begins
+                    document.getElementById("ALBUM1").style.display = "none";
                   }}
                 >
                   <a className="page-link" href="#" aria-label="Previous">
@@ -451,8 +479,13 @@ export default function Mains() {
           )}
         </div>
         <div id="hide2">
-          {album ? <Albums /> : <Minicompsecond toggle2={toggles2} />}
+          {album ? (
+            <Albums />
+          ) : (
+            <Minicompsecond albumtoggle1={album1Func} toggle2={toggles2} />
+          )}
         </div>
+        {album1 ? <Album1 /> : <Album1 />}
         <div id="hide3">
           {radio ? <Radio /> : <Minicompthird toggle3={toggles3} />}
         </div>
