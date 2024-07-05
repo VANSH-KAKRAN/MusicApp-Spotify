@@ -78,9 +78,10 @@ const AudioPlayer = ({ songs }) => {
         <li>
           <svg
             style={{
-              backgroundColor: "black",
-              color: "white",
+              backgroundColor: "white",
+              color: "green",
               borderRadius: "50%",
+              border :" 1px solid green"
             }}
             id="PLayButton"
             className=" PLayButton"
