@@ -1,7 +1,7 @@
 .Lbum1-Photo-area{
     padding-left: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 6%;
+    padding-bottom: 3%;
     /* height: 400px; */
     display: flex;
     background-color: #602d09;
@@ -13,8 +13,7 @@
 .AlbumImg{
     box-shadow: 1px 2px 24px 5px #956e54;
    
-    width: 17%;
-    height: 17%;
+    max-width: 175px;
     border-radius: 3%;
 }
 .AboutAlbum{
@@ -25,7 +24,7 @@
     font-size: small;
 }
 .Singername{
-    font-size: 8vw;
+    font-size: 6vw;
  
     color: white;
     font-weight: 800;

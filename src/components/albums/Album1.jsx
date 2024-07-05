@@ -13,6 +13,7 @@ import SATRANGA from "/albums/animal/SATRANGA.mp3";
 import Animal from "/images/album1.jpg";
 import Minicompsecond from "../Minicompsecond";
 import Minicompthird from "../Minicompthird";
+import Minicomp from "../Minicomp";
 
 export default function Album1() {
   const songs = [
@@ -99,7 +100,7 @@ export default function Album1() {
         <div>
           <div className="App">
             <AudioPlayer songs={songs} />
-            <Minicompsecond />
+            <Minicomp />
             <Minicompthird />
             <Secondfooter />
           </div>
