@@ -141,7 +141,7 @@ const AudioPlayer = ({ songs }) => {
           <ul className="TitleNav">
 
           <li>#</li>
-          <li>Title</li>
+          <li id="title-text">Title</li>
           <li className="popuarity">Popularity</li>
           <li>
             <svg
