@@ -252,6 +252,18 @@ background-color: black !important;
 .Popularity{
   display: flex;
 }
+@media only screen and (max-width:1000px){
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    background-color: #868686;
+    width: 97.9% !important;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+}
+
 @media only screen and (max-width:600px){
   .Popularity{
     display: none !important;
@@ -292,4 +304,42 @@ background-color: black !important;
   /* border-top: var(--bs-border-width) solid; */
   /* opacity: .25; */
   background-color: wheat;
+}
+.playlist ul{
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  /* margin: auto; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.all-control{
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ input {
+  margin: 0;
+  font-family: inherit;
+  width: 90%;
+  font-size: inherit;
+  line-height: inherit;
+}
+.bottom-nav{
+  position: fixed;
+    bottom: 0;
+    background-color: #868686;
+    width: 74.4%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.controls button{
+  border: 0;
+  background: transparent;
+}
+h2{
+  font-size: medium;
+}
+.volume-controls{
+  display: flex;
 }
