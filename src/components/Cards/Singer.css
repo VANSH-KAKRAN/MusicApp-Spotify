@@ -321,7 +321,7 @@ background-color: black !important;
  input {
   margin: 0;
   font-family: inherit;
-  width: 90%;
+  width: 80%;
   font-size: inherit;
   line-height: inherit;
 }
@@ -342,4 +342,7 @@ h2{
 }
 .volume-controls{
   display: flex;
+}
+.time-controls{
+  text-align: center;
 }
