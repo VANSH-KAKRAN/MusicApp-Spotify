@@ -25,6 +25,8 @@ import Singer11 from "./Cards/Singer11";
 import Singer12 from "./Cards/Singer12";
 import Loginpage from "./Loginpage";
 import Album1 from "./albums/Album1";
+import Search from "./Search";
+import SearchSongs from "./SearchSongs";
 
 export default function Mains() {
   const [artists, setartists] = useState(false);
@@ -332,6 +334,31 @@ export default function Mains() {
     document.getElementById("SecondFooter").style.display = "none";
     document.getElementById("ALBUM1").style.display = "";
   };
+  const [search, setsearch] = useState(false);
+  const searchFunc = () => {
+    setsearch((prev) => !prev);
+    document.getElementById("hide1").style.display = "none";
+    document.getElementById("hide3").style.display = "none";
+    document.getElementById("hide2").style.display = "none";
+    document.getElementById("singerOneSongs").style.display = "none";
+    document.getElementById("singerTwoSongs").style.display = "none";
+    document.getElementById("singerThreeSongs").style.display = "none";
+    document.getElementById("singerFourSongs").style.display = "none";
+    document.getElementById("singerFiveSongs").style.display = "none";
+    document.getElementById("singerSixSongs").style.display = "none";
+    document.getElementById("singerSevenSongs").style.display = "none";
+    document.getElementById("singerEightSongs").style.display = "none";
+    document.getElementById("singerNineSongs").style.display = "none";
+    document.getElementById("singerTenSongs").style.display = "none";
+    document.getElementById("singerElevenSongs").style.display = "none";
+    document.getElementById("singerTwelveSongs").style.display = "none";
+    document.getElementById("SecondFooter").style.display = "none";
+    document.getElementById("ALBUM1").style.display = "none";
+    document.getElementById("Searchs").style.display = "";
+    document.getElementById("SecondFooter").style.display =
+    "";
+
+  };
   return (
     <div id="router">
       <div id="comp1" className="comp1">
@@ -384,7 +411,8 @@ export default function Mains() {
                       "none";
                     document.getElementById("SecondFooter").style.display = "";
                     document.getElementById("comp1").style.display = "";
-                    
+                    document.getElementById("Searchs").style.display = "none";
+
 
                     // now the albums begins
                     document.getElementById("ALBUM1").style.display = "none";
@@ -421,6 +449,7 @@ export default function Mains() {
             </nav>
           </div>
           <div id="signlog" className="signlog">
+            <Search toggleSearch={searchFunc} />
             <button className="signup ">Sign Up</button>
             <button className="login get-spotify" onClick={loginFunc}>
               Log in
@@ -442,6 +471,7 @@ export default function Mains() {
       {singer10card ? <Singer10 /> : <Singer10 />}
       {singer11card ? <Singer11 /> : <Singer11 />}
       {singer12card ? <Singer12 /> : <Singer12 />}
+        {search ? <SearchSongs /> : <SearchSongs/>}
       {/* //this is for just main components different from cards of singers */}
       <div id="mini12">
         <div id="hide1">

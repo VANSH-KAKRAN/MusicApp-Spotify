@@ -152,7 +152,7 @@ function AudioPlayer({ songs }) {
   return (
     <div className="Background-all">
       <div className="Play-follow3d">
-        <li>
+        <li onClick={playSong}>
           <svg
             style={{
               backgroundColor: "white",

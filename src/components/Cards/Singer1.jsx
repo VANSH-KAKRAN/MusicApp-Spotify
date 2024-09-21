@@ -14,6 +14,7 @@ import arigitsinghback from "/images/arigitsinghback.png";
 import Minicompsecond from "../Minicompsecond";
 import Minicompthird from "../Minicompthird";
 
+
 export default function Singer1() {
   const songs = [
     { Snumber:"1",
