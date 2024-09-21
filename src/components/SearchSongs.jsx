@@ -39,7 +39,7 @@ const HomePage = () => {
      
       <input className='input'
         type="search"
-        placeholder="    Search by name, category, or price"
+        placeholder="    What do you want to play ?"
         value={searchTerm}
         onChange={handleSearch}
       />
