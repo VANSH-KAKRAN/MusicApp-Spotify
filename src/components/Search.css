@@ -12,6 +12,13 @@
     border: 0 !important;
     border-radius: 30px;
 }
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+}
 .form-controls {
     /* display: block;
     width: 100%;
@@ -33,4 +40,27 @@
   min-width: 0;
   border: 0;
   background-color: #393939;
+}
+.input{
+  position: absolute;
+  /* top: 5px; */
+  width: 30vw;
+  height: 50px;
+  left: 45vw;
+  top: 16px;
+  border-radius: 45px;
+  animation: width 1s ease-in-out;
+}
+@keyframes width {
+  0% {
+    /* height: 0vh;
+    border-radius: 100%; */
+    width: 0px;
+  }
+  100% {
+    width: 30vw;
+
+    /* transform: scale(1);
+      border-radius: 0%; */
+  }
 }

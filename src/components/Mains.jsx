@@ -355,9 +355,8 @@ export default function Mains() {
     document.getElementById("SecondFooter").style.display = "none";
     document.getElementById("ALBUM1").style.display = "none";
     document.getElementById("Searchs").style.display = "";
-    document.getElementById("SecondFooter").style.display =
-    "";
-
+    document.getElementById("SecondFooter").style.display = "";
+    document.getElementById("input-group").style.display = "none";
   };
   return (
     <div id="router">
@@ -412,14 +411,14 @@ export default function Mains() {
                     document.getElementById("SecondFooter").style.display = "";
                     document.getElementById("comp1").style.display = "";
                     document.getElementById("Searchs").style.display = "none";
-
+                    document.getElementById("input-group").style.display = "";
 
                     // now the albums begins
                     document.getElementById("ALBUM1").style.display = "none";
                   }}
                 >
                   <a className="page-link" href="#" aria-label="Previous">
-                    <svg
+                    {/* <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
@@ -428,10 +427,20 @@ export default function Mains() {
                       viewBox="0 0 16 16"
                     >
                       <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
+                    </svg> */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      class="bi bi-house-door-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
                     </svg>
                   </a>
                 </li>
-                <li className="page-item">
+                {/* <li className="page-item">
                   <a className="page-link" href="#" aria-label="Next">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -444,13 +453,13 @@ export default function Mains() {
                       <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
                     </svg>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>
           <div id="signlog" className="signlog">
             <Search toggleSearch={searchFunc} />
-            <button className="signup ">Sign Up</button>
+            {/* <button className="signup ">Sign Up</button> */}
             <button className="login get-spotify" onClick={loginFunc}>
               Log in
             </button>
@@ -471,9 +480,9 @@ export default function Mains() {
       {singer10card ? <Singer10 /> : <Singer10 />}
       {singer11card ? <Singer11 /> : <Singer11 />}
       {singer12card ? <Singer12 /> : <Singer12 />}
-        {search ? <SearchSongs /> : <SearchSongs/>}
       {/* //this is for just main components different from cards of singers */}
       <div id="mini12">
+        {search ? <SearchSongs /> : <SearchSongs />}
         <div id="hide1">
           {artists ? (
             <Artists

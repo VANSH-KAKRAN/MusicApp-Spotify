@@ -1,3 +1,4 @@
+
 .mystyle {
   display: flex;
   height: 100vh;
@@ -28,6 +29,20 @@
   padding-top: 1%;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  /* animation: width 1s ease-in-out; */
+  animation: 2s ease 0s 1 normal none running grow;
+  /* animation: 3s infinite alternate slidein; */
+}
+@keyframes grow {
+  0% {
+   
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+
+   
+  }
 }
 
 .comp1 {
@@ -139,20 +154,20 @@ a {
   height: 51px;
   animation: 0.5s ease 0s 1 normal none running in;
 }
-
+/* 
 @keyframes in {
   0% {
     /* height: 0vh;
     border-radius: 100%; */
-    width: 0vw;
-  }
-  100% {
-    width: 100vw;
+    /* width: 0vw; */
+  /* } */
+  /* 100% {
+    width: 100vw; */
 
     /* transform: scale(1);
       border-radius: 0%; */
-  }
-}
+  /* } */
+/* } */ 
 .get-spotify:hover {
   background-color: #2e2e2e;
   color: wheat;

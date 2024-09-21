@@ -44,7 +44,7 @@ export default function Navbar2({toggle2}) {
                   <div className="search-bar">
                     <input type="text" />
                   </div>
-                <button className="signup ">Sign Up</button>
+              
                 <button className="login get-spotify">Log in</button>
               </div>
             </div>
