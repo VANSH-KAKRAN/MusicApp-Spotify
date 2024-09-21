@@ -29,17 +29,18 @@
   padding-top: 1%;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  /* animation: width 1s ease-in-out; */
-  animation: 2s ease 0s 1 normal none running grow;
+  animation: width 1s ;
+  /* animation: 1s grow; */
   /* animation: 3s infinite alternate slidein; */
+  animation: .5s   slidein;
 }
-@keyframes grow {
+@keyframes slidein {
   0% {
    
     width: 0vw;
   }
   100% {
-    width: 100vw;
+    width: 100%;
 
    
   }
