@@ -124,6 +124,7 @@ const ItemDetailPage = () => {
 const SearchSongs = () => {
   return (
     <div id="Searchs" style={{ display: "none" }}>
+
       <Router>
         <Routes>
           <Route path="/MusicApp-Spotify/" element={<HomePage />} />
