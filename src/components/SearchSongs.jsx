@@ -129,7 +129,7 @@ const SearchSongs = () => {
         <Routes>
           <Route path="/MusicApp-Spotify/" element={<HomePage />} />
           <Route
-            path="/MusicApp-Spotify/item/:snumber"
+            path="/MusicApp-Spotify/item/:snumber/"
             element={<ItemDetailPage />}
           />
         </Routes>
