@@ -1,54 +1,86 @@
-import React, { useState } from 'react';
-import './Search.css'
-import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import "./Search.css";
+import songlogo from '../assets/songlogo.jpg'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useParams,
+  useNavigate,
+} from "react-router-dom";
+import searchData from "../search";
 
-const itemsData = [
-  { id: 1, name: 'Apple', category: 'Fruit', price: 1.2 },
-  { id: 2, name: 'Banana', category: 'Fruit', price: 0.5 },
-  { id: 3, name: 'Carrot', category: 'Vegetable', price: 0.8 },
-  { id: 4, name: 'Mango', category: 'Fruit', price: 1.5 },
-  { id: 5, name: 'Cucumber', category: 'Vegetable', price: 0.6 },
-  { id: 6, name: 'Grapes', category: 'Fruit', price: 2.0 },
-  { id: 7, name: 'Strawberry', category: 'Fruit', price: 3.0 },
-  { id: 8, name: 'Tomato', category: 'Vegetable', price: 1.0 },
-  { id: 9, name: 'Blueberry', category: 'Fruit', price: 2.5 },
-  { id: 10, name: 'Watermelon', category: 'Fruit', price: 5.0 },
-];
+// const searchData = [
+//   { snumber: 1, title: 'Apple', src: 'Fruit', Artist1: 1.2 },
+//   { snumber: 2, title: 'Banana', src: 'Fruit', Artist1: 0.5 },
+//   { snumber: 3, title: 'Carrot', src: 'Vegetable', Artist1: 0.8 },
+//   { snumber: 4, title: 'Mango', src: 'Fruit', Artist1: 1.5 },
+//   { snumber: 5, title: 'Cucumber', src: 'Vegetable', Artist1: 0.6 },
+//   { snumber: 6, title: 'Grapes', src: 'Fruit', Artist1: 2.0 },
+//   { snumber: 7, title: 'Strawberry', src: 'Fruit', Artist1: 3.0 },
+//   { snumber: 8, title: 'Tomato', src: 'Vegetable', Artist1: 1.0 },
+//   { snumber: 9, title: 'Blueberry', src: 'Fruit', Artist1: 2.5 },
+//   { snumber: 10, title: 'Watermelon', src: 'Fruit', Artist1: 5.0 },
+// ];
 
 const HomePage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value.toLowerCase());
   };
 
-  const filteredItems = itemsData.filter(
+  const filteredItems = searchData.filter(
     (item) =>
-      item.name.toLowerCase().includes(searchTerm) ||
-      item.category.toLowerCase().includes(searchTerm) ||
-      String(item.price).includes(searchTerm)
+      item.title.toLowerCase().includes(searchTerm) ||
+      item.src.toLowerCase().includes(searchTerm) ||
+      item.popularity.toLowerCase().includes(searchTerm) ||
+      item.time.toLowerCase().includes(searchTerm) ||
+      
+      String(item.Artist1).includes(searchTerm)
   );
 
-  const handleItemClick = (id) => {
-    navigate(`/MusicApp-Spotify/item/${id}`);
+  const handleItemClick = (snumber) => {
+    navigate(`/MusicApp-Spotify/item/${snumber}`);
   };
 
   return (
-    <div>
-     
-      <input className='input'
+    <div className="SearchMain">
+      <input
+        className="input"
         type="search"
         placeholder="    What do you want to play ?"
         value={searchTerm}
         onChange={handleSearch}
       />
-      <ul>
+      <ul className="songItoms">
         {filteredItems.map((item) => (
-          <li key={item.id} onClick={() => handleItemClick(item.id)}>
-            <h3>{item.name}</h3>
-            <p>Category: {item.category}</p>
-            <p>Price: ${item.price}</p>
+          // <li key={item.snumber} onClick={() => handleItemClick(item.snumber)}>
+          //   <h3>{item.title}</h3>
+          //   <p>src: {item.src}</p>
+          //   <p>popularity:{item.popularity}</p>
+          //   <p>Artist1: ${item.Artist1}</p>
+          // </li>
+
+          <li
+            key={item.snumber}
+            onClick={() => handleItemClick(item.snumber)}
+            class="card"
+          >
+            <h5 class="card-header"><img src={item.logo} alt="" /></h5>
+            <div class="card-body">
+              {/* <p class="card-text"></p> */}
+              <p class="card-text">{item.title}&nbsp;-&nbsp;{item.Artist1}</p>
+              <h5 class="card-title">
+                {item.popularity}&nbsp;&nbsp;({item.time})
+              </h5>
+        <audio controls>
+        <source src={item.src} type="audio/mpeg" />
+       
+      </audio>
+            </div>
           </li>
         ))}
       </ul>
@@ -57,35 +89,52 @@ const HomePage = () => {
 };
 
 const ItemDetailPage = () => {
-  const { id } = useParams();
-  const item = itemsData.find((item) => item.id === parseInt(id, 10));
+  const { snumber } = useParams();
+  const item = searchData.find(
+    (item) => item.snumber === parseInt(snumber, 10)
+  );
 
   if (!item) {
     return <p>Item not found</p>;
   }
 
   return (
+    //this is what a am going to see after i click on a song
     <div>
-      <h2>{item.name}</h2>
-      <p>Category: {item.category}</p>
-      <p>Price: ${item.price}</p>
-      <Link to="/MusicApp-Spotify/">Back to List</Link>
+      <Link id="link" to="/MusicApp-Spotify/"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+</svg></Link>
+      <div className="SongAfterClick">
+        <img src={songlogo} alt="" />
+        <p className="titleartist">{item.title} - {item.Artist1}</p>
+        <audio controls>
+        <source src={item.src} type="audio/mpeg" />
+       
+      </audio>
+
+      </div>
+      {/* <h2>{item.title}</h2>
+      <p>src: {item.src}</p>
+      <p>Artist1: ${item.Artist1}</p> */}
+
     </div>
   );
 };
 
-const App = () => {
+const SearchSongs = () => {
   return (
-    <div id='Searchs' style={{display:"none"}}>
-
-    <Router>
-      <Routes>
-        <Route path="/MusicApp-Spotify/" element={<HomePage />} />
-        <Route path="/MusicApp-Spotify/item/:id" element={<ItemDetailPage />} />
-      </Routes>
-    </Router>
+    <div id="Searchs" style={{ display: "none" }}>
+      <Router>
+        <Routes>
+          <Route path="/MusicApp-Spotify/" element={<HomePage />} />
+          <Route
+            path="/MusicApp-Spotify/item/:snumber"
+            element={<ItemDetailPage />}
+          />
+        </Routes>
+      </Router>
     </div>
   );
 };
 
-export default App;
+export default SearchSongs;

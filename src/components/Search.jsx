@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import './Search.css'
-function Search({toggleSearch, onSearch}) {
+function Search({toggleSearch}) {
 
 
  

@@ -365,7 +365,20 @@ height: 3px;
     margin-left: 15px;
     margin-right: 15px;
     height: 4px;
+    transition: width 0.3s ease;
 }
+@keyframes slidein {
+  0% {
+   
+    width: 0vw;
+  }
+  100% {
+    width: 100%;
+
+   
+  }
+}
+
 .all-control div svg{
   color: white;
 }

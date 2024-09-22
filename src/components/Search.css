@@ -1,16 +1,16 @@
 .input-group-text {
-    display: flex;
-    align-items: center;
-    padding: 15px 18px;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: white;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #393939;
-    border: 0 !important;
-    border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 15px 18px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #393939;
+  border: 0 !important;
+  border-radius: 30px;
 }
 .input-group {
   position: relative;
@@ -20,7 +20,7 @@
   width: 100%;
 }
 .form-controls {
-    /* display: block;
+  /* display: block;
     width: 100%;
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -41,7 +41,7 @@
   border: 0;
   background-color: #393939;
 }
-.input{
+.input {
   position: absolute;
   /* top: 5px; */
   width: 30vw;
@@ -64,7 +64,7 @@
       border-radius: 0%; */
   }
 }
-@media only screen and (max-width:999px){
+@media only screen and (max-width: 999px) {
   .input {
     position: absolute;
     /* top: 5px; */
@@ -74,5 +74,66 @@
     top: 16px;
     border-radius: 45px;
     animation: width 1s ease-in-out;
+  }
 }
+.songItoms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: fit-content; */
+  max-width: 95%;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.SearchMain {
+  background-color: #b2b2b2;
+}
+.card {
+  width: 400px;
+  height: 260px;
+  padding-top: 13px;
+  color: white;
+  background-color: black;
+}
+.card-header img{
+  width: 50px;
+}
+.card-title{
+  margin-bottom: 20px;
+}
+.SongAfterClick{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.SongAfterClick img{
+  width: 15vw;
+  border-radius: 15px;
+
+}
+.titleartist{
+  color: #ffffff;
+  font-size: x-large;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#link{
+
+  position: relative;
+
+  top: 30px;
+  left: 25px;
+
+}
+audio{
+  width: 80%;
 }

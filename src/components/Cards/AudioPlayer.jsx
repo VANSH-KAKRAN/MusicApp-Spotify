@@ -307,6 +307,7 @@ function AudioPlayer({ songs }) {
             value={(currentTime / duration) * 100 || 0}
             onChange={handleSeek}
             />
+            
           <span>{formatTime(duration)}</span>
         </div>
           </div>
