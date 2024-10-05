@@ -346,6 +346,19 @@ a {
   gap: 60%;
   padding-right: 15%;
 }
+@media only screen and (max-width:730px){
+
+  .icons {
+         flex-direction: row;
+display: flex;
+gap: 15%;
+padding-right: 0;
+width: 100%;
+align-items: center;
+justify-content: center;
+
+  }
+}
 
 .icons div svg {
   width: 30px;
