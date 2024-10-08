@@ -68,11 +68,7 @@ function Menu({ toggle }) {
                     Download
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link " href="#">
-                    |
-                  </a>
-                </li>
+             
                 <li className="nav-item">
                   <a className="nav-link log " href="#">
                     Sign Up

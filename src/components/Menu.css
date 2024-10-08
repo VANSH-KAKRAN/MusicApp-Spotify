@@ -83,6 +83,7 @@ a {
     left: 0;
     z-index: 5;
     right: 0;
+    top: 0;
 }
 .nav-color {
   background-color: transparent !important;
@@ -124,6 +125,7 @@ a {
   font-size: xxx-large;
 }
 .component0 {
+  margin-top: 80px;
   height: 570px;
   background-blend-mode: color-burn;
   background-repeat: no-repeat;
