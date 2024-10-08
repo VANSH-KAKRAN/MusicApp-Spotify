@@ -37,7 +37,9 @@ const HomePage = () => {
   const handleSearch = (e) => {
     setSearchTerm(e.target.value.toLowerCase());
   };
-
+  function TopFunc () {
+    window.scrollTo(0, 0);
+  }
   const filteredItems = searchData.filter(
     (item) =>
       item.title.toLowerCase().includes(searchTerm) ||
@@ -74,7 +76,11 @@ const HomePage = () => {
             key={item.snumber}
             onClick={() => handleItemClick(item.snumber)}
             className="card"
-          >
+            >
+<div onClick={TopFunc}>
+
+
+
             <h5 className="card-header"><img src={item.logo} alt="" /></h5>
             <div className="card-body">
               {/* <p className="card-text"></p> */}
@@ -87,6 +93,10 @@ const HomePage = () => {
        
       </audio>
             </div>
+
+
+            </div>
+
           </li>
         ))}
       </ul>
