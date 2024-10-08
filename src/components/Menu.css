@@ -79,6 +79,10 @@ a {
 }
 .aboveall-navbar {
   background-color: rgb(16, 16, 16) !important;
+  position: fixed;
+    left: 0;
+    z-index: 5;
+    right: 0;
 }
 .nav-color {
   background-color: transparent !important;
@@ -124,9 +128,12 @@ a {
   background-blend-mode: color-burn;
   background-repeat: no-repeat;
 }
-.navbar-toggler-icon {
-  padding: 24px;
-  border-radius: 10px;
+
+.navbar-toggler {
+  background-color: #fff;
+  width: 45px;
+  height: 40px;
+  padding: 0px;
 }
 @media only screen and (max-width: 990px) {
   .phone-img {
@@ -346,6 +353,17 @@ a {
 .icons div svg {
   width: 30px;
   height: 30px;
+}
+@media only screen and (max-width:710px) {
+  .icons{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 60%;
+    padding-right: 0;
+    justify-content: center;
+  }
+  
 }
 .Mains {
   gap: 0.7%;
