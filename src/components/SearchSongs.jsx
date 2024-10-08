@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import "./Search.css";
-import songlogo from '../assets/songlogo.jpg'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
+import songlogo from '../assets/songlogo.jpg';
+import { HashRouter, Routes, Route,
+    Link,
   useParams,
   useNavigate,
-} from "react-router-dom";
+
+ } from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link,
+//   useParams,
+//   useNavigate,
+// } from "react-router-dom";
 import searchData from "../search";
 
 // const searchData = [
@@ -43,7 +49,7 @@ const HomePage = () => {
   );
 
   const handleItemClick = (snumber) => {
-    navigate(`/MusicApp-Spotify/item/${snumber}`);
+    navigate(`/item/${snumber}`);
   };
 
   return (
@@ -67,13 +73,13 @@ const HomePage = () => {
           <li
             key={item.snumber}
             onClick={() => handleItemClick(item.snumber)}
-            class="card"
+            className="card"
           >
-            <h5 class="card-header"><img src={item.logo} alt="" /></h5>
-            <div class="card-body">
-              {/* <p class="card-text"></p> */}
-              <p class="card-text">{item.title}&nbsp;-&nbsp;{item.Artist1}</p>
-              <h5 class="card-title">
+            <h5 className="card-header"><img src={item.logo} alt="" /></h5>
+            <div className="card-body">
+              {/* <p className="card-text"></p> */}
+              <p className="card-text">{item.title}&nbsp;-&nbsp;{item.Artist1}</p>
+              <h5 className="card-title">
                 {item.popularity}&nbsp;&nbsp;({item.time})
               </h5>
         <audio controls>
@@ -101,7 +107,7 @@ const ItemDetailPage = () => {
   return (
     //this is what a am going to see after i click on a song
     <div>
-      <Link id="link" to="/MusicApp-Spotify/"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+      <Link id="link" to="/"><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bk-button bi-arrow-left" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
 </svg></Link>
       <div className="SongAfterClick">
@@ -125,15 +131,16 @@ const SearchSongs = () => {
   return (
     <div id="Searchs" style={{ display: "none" }}>
 
-      <Router>
+      <HashRouter>
         <Routes>
-          <Route path="/MusicApp-Spotify/" element={<HomePage />} />
+          <Route path ="/" element={<HomePage/>}/>
+          <Route path="/MusicApp-Spotify" element={<HomePage />} />
           <Route
-            path="/MusicApp-Spotify/item/:snumber/"
+            path="/item/:snumber"
             element={<ItemDetailPage />}
           />
         </Routes>
-      </Router>
+      </HashRouter>
     </div>
   );
 };

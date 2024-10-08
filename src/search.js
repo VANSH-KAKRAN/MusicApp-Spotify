@@ -155,7 +155,7 @@ const searchData = [
     logo: Spotify,
   },
   {
-    snumber: "16",
+    snumber: 16,
     title: "Qaafirana",
     src: Qaafirana,
     Artist1: "Arijit Singh",

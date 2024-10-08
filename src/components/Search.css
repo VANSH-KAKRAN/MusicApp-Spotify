@@ -65,12 +65,11 @@
   }
 }
 @media only screen and (max-width: 999px) {
-  .SongAfterClick img{
+  .SongAfterClick img {
     width: 80% !important;
     /* width: 40%; */
-  
+
     border-radius: 10%;
-  
   }
   .input {
     position: absolute;
@@ -108,13 +107,13 @@
   color: white;
   background-color: black;
 }
-.card-header img{
+.card-header img {
   width: 50px;
 }
-.card-title{
+.card-title {
   margin-bottom: 20px;
 }
-.SongAfterClick{
+.SongAfterClick {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,27 +121,31 @@
   padding-top: 50px;
   padding-bottom: 100px;
 }
-.SongAfterClick img{
+.SongAfterClick img {
   /* width: 80%; */
   width: 40%;
 
   border-radius: 10%;
-
 }
-.titleartist{
+.titleartist {
   color: #ffffff;
   font-size: x-large;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-#link{
-
+#link {
   position: relative;
 
   top: 30px;
   left: 25px;
-
 }
-audio{
+audio {
   width: 80%;
+}
+.bk-button {
+  background-color: #919191;
+  border-radius: 10px;
+  padding: 10px;
+  position: fixed;
+  z-index: 2;
 }
