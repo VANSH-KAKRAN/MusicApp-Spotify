@@ -83,6 +83,8 @@
   }
 }
 .songItoms {
+  background-color: transparent !important;
+  box-shadow: none !important;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -153,7 +155,8 @@ audio {
   position: fixed;
   z-index: 2;
 }
-#SecondFooter{
-  padding-top: 100px;
-  
+
+.Secondfooter ul:hover{
+  background-color:transparent !important;
+  box-shadow: none;
 }

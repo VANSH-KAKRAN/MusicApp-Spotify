@@ -486,6 +486,7 @@ justify-content: center;
   width: 135px;
 }
 .singlog-leftright {
+  padding-bottom: 10px;
   position: sticky;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
