@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./Search.css";
-import songlogo from '../assets/songlogo.jpg';
-import { HashRouter, Routes, Route,
-    Link,
+import songlogo from "../assets/songlogo.jpg";
+import {
+  HashRouter,
+  Routes,
+  Route,
+  Link,
   useParams,
   useNavigate,
-
- } from "react-router-dom";
+} from "react-router-dom";
 // import {
 //   BrowserRouter as Router,
 //   Routes,
@@ -37,7 +39,7 @@ const HomePage = () => {
   const handleSearch = (e) => {
     setSearchTerm(e.target.value.toLowerCase());
   };
-  function TopFunc () {
+  const TopFunc=()=> {
     window.scrollTo(0, 0);
   }
   const filteredItems = searchData.filter(
@@ -46,7 +48,6 @@ const HomePage = () => {
       item.src.toLowerCase().includes(searchTerm) ||
       item.popularity.toLowerCase().includes(searchTerm) ||
       item.time.toLowerCase().includes(searchTerm) ||
-      
       String(item.Artist1).includes(searchTerm)
   );
 
@@ -76,27 +77,24 @@ const HomePage = () => {
             key={item.snumber}
             onClick={() => handleItemClick(item.snumber)}
             className="card"
-            >
-<div onClick={TopFunc}>
-
-
-
-            <h5 className="card-header"><img src={item.logo} alt="" /></h5>
-            <div className="card-body">
-              {/* <p className="card-text"></p> */}
-              <p className="card-text">{item.title}&nbsp;-&nbsp;{item.Artist1}</p>
-              <h5 className="card-title">
-                {item.popularity}&nbsp;&nbsp;({item.time})
+          >
+     
+              <h5 className="card-header" onClick={TopFunc}>
+                <img src={item.logo} alt="" />
               </h5>
-        <audio controls>
-        <source src={item.src} type="audio/mpeg" />
-       
-      </audio>
-            </div>
-
-
-            </div>
-
+              <div className="card-body" onClick={TopFunc}>
+                {/* <p className="card-text"></p> */}
+                <p className="card-text">
+                  {item.title}&nbsp;-&nbsp;{item.Artist1}
+                </p>
+                <h5 className="card-title">
+                  {item.popularity}&nbsp;&nbsp;({item.time})
+                </h5>
+                <audio controls>
+                  <source src={item.src} type="audio/mpeg" />
+                </audio>
+              </div>
+         
           </li>
         ))}
       </ul>
@@ -117,22 +115,33 @@ const ItemDetailPage = () => {
   return (
     //this is what a am going to see after i click on a song
     <div>
-      <Link id="link" to="/"><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bk-button bi-arrow-left" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-</svg></Link>
+      <Link id="link" to="/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          className="bi bk-button bi-arrow-left"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+          />
+        </svg>
+      </Link>
       <div className="SongAfterClick">
         <img src={songlogo} alt="" />
-        <p className="titleartist">{item.title} - {item.Artist1}</p>
+        <p className="titleartist">
+          {item.title} - {item.Artist1}
+        </p>
         <audio controls>
-        <source src={item.src} type="audio/mpeg" />
-       
-      </audio>
-
+          <source src={item.src} type="audio/mpeg" />
+        </audio>
       </div>
       {/* <h2>{item.title}</h2>
       <p>src: {item.src}</p>
       <p>Artist1: ${item.Artist1}</p> */}
-
     </div>
   );
 };
@@ -140,15 +149,11 @@ const ItemDetailPage = () => {
 const SearchSongs = () => {
   return (
     <div id="Searchs" style={{ display: "none" }}>
-
       <HashRouter>
         <Routes>
-          <Route path ="/" element={<HomePage/>}/>
+          <Route path="/" element={<HomePage />} />
           <Route path="/MusicApp-Spotify" element={<HomePage />} />
-          <Route
-            path="/item/:snumber"
-            element={<ItemDetailPage />}
-          />
+          <Route path="/item/:snumber" element={<ItemDetailPage />} />
         </Routes>
       </HashRouter>
     </div>

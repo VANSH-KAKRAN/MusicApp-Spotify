@@ -213,7 +213,11 @@ function AudioPlayer({ songs }) {
           </div>
         </li>
       </div>
-      <div className="Popular-text">Popular</div>
+      <div className="Popular-text">
+        <li>#</li>
+        <li>Title</li>
+      </div>
+      <hr className="Hastitle" />
 
       {/* <ul className="playlist">
         <div>
@@ -241,37 +245,70 @@ function AudioPlayer({ songs }) {
       </ul> */}
 
       <div className="App">
-        
-
         {/* Audio element */}
         <audio ref={audioRef} src={songs[currentSongIndex].src} />
 
         {/* Controls */}
         <div className="bottom-nav">
+          <div className="all-control">
+            <h2>{songs[currentSongIndex].title}</h2>
 
-        <div className="all-control">
-        <h2>{songs[currentSongIndex].title}</h2>
+            <div className="controls">
+              <button onClick={previousSong}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-skip-start-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z" />
+                </svg>
+              </button>
+              {isPlaying ? (
+                <button onClick={pauseSong}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-stop-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.5 5A1.5 1.5 0 0 0 5 6.5v3A1.5 1.5 0 0 0 6.5 11h3A1.5 1.5 0 0 0 11 9.5v-3A1.5 1.5 0 0 0 9.5 5z" />
+                  </svg>
+                </button>
+              ) : (
+                <button onClick={playSong}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-play-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                  </svg>
+                </button>
+              )}
+              <button onClick={nextSong}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-skip-end-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z" />
+                </svg>
+              </button>
+            </div>
 
-        <div className="controls">
-          <button onClick={previousSong}><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-skip-start-fill" viewBox="0 0 16 16">
-            <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z"/>
-          </svg></button>
-          {isPlaying ? (
-            <button onClick={pauseSong}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-stop-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.5 5A1.5 1.5 0 0 0 5 6.5v3A1.5 1.5 0 0 0 6.5 11h3A1.5 1.5 0 0 0 11 9.5v-3A1.5 1.5 0 0 0 9.5 5z"/>
-          </svg></button>
-          ) : (
-            <button onClick={playSong}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
-          </svg></button>
-          )}
-          <button onClick={nextSong}><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-skip-end-fill" viewBox="0 0 16 16">
-  <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z"/>
-</svg></button>
-        </div>
-
-        {/* Time and seek bar */}
-        {/* <div className="time-controls">
+            {/* Time and seek bar */}
+            {/* <div className="time-controls">
           <span>{formatTime(currentTime)}</span>
           <input
           type="range"
@@ -283,46 +320,60 @@ function AudioPlayer({ songs }) {
           <span>{formatTime(duration)}</span>
           </div> */}
 
-        {/* Volume controls */}
-        <div className="volume-controls">
-          <label><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-down-fill" viewBox="0 0 16 16">
-  <path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12zm3.025 4a4.5 4.5 0 0 1-1.318 3.182L10 10.475A3.5 3.5 0 0 0 11.025 8 3.5 3.5 0 0 0 10 5.525l.707-.707A4.5 4.5 0 0 1 12.025 8"/>
-</svg></label>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value={volume * 100}
-            onChange={handleVolumeChange}
-            />
-        </div>
+            {/* Volume controls */}
+            <div className="volume-controls">
+              <label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-volume-down-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12zm3.025 4a4.5 4.5 0 0 1-1.318 3.182L10 10.475A3.5 3.5 0 0 0 11.025 8 3.5 3.5 0 0 0 10 5.525l.707-.707A4.5 4.5 0 0 1 12.025 8" />
+                </svg>
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value={volume * 100}
+                onChange={handleVolumeChange}
+              />
             </div>
-               {/* Time and seek bar */}
-        <div className="time-controls">
-          <span>{formatTime(currentTime)}</span>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value={(currentTime / duration) * 100 || 0}
-            onChange={handleSeek}
-            />
-            
-          <span>{formatTime(duration)}</span>
-        </div>
           </div>
+          {/* Time and seek bar */}
+          <div className="time-controls">
+            <span>{formatTime(currentTime)}</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value={(currentTime / duration) * 100 || 0}
+              onChange={handleSeek}
+            />
+
+            <span>{formatTime(duration)}</span>
+          </div>
+        </div>
 
         {/* Playlist */}
         <div className="playlist">
           {songs.map((song, index) => (
             <ul
-            key={index}
-            className={index === currentSongIndex ? "active" : ""}
+              key={index}
+              className={index === currentSongIndex ? "active" : ""}
               onClick={() => handleSongClick(index)}
             >
-              <li>{song.Snumber}</li>
-              <li>{song.title}</li>
-              <li>{song.popularity}</li>
+              <li className="num">{song.Snumber}</li>
+              <li className="title">
+                {song.title}{" "}
+                <div className="artistsName">
+                  {song.Artist1} , {song.Artist2} , {song.Artist3}
+                </div>{" "}
+              </li>
+              <li className="pop">{song.time} </li>
             </ul>
           ))}
 

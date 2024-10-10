@@ -153,3 +153,7 @@ audio {
   position: fixed;
   z-index: 2;
 }
+#SecondFooter{
+  padding-top: 100px;
+  
+}
