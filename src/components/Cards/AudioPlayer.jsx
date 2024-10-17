@@ -370,7 +370,7 @@ function AudioPlayer({ songs }) {
               <li className="title">
                 {song.title}{" "}
                 <div className="artistsName">
-                  {song.Artist1} , {song.Artist2} , {song.Artist3}
+                  {song.Artist1} , {song.Artist3}
                 </div>{" "}
               </li>
               <li className="pop">{song.time} </li>
