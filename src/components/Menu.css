@@ -1,4 +1,12 @@
-
+.UserLogin{
+  padding: 8px;
+    background-color: #3b3b3b;
+    border-radius: 50px;
+}
+.UserLogin svg{
+  color: white;
+  background-color: transparent;
+}
 .mystyle {
   display: flex;
   height: 100vh;
