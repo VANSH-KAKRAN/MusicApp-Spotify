@@ -183,8 +183,8 @@ a {
   /* } */
 /* } */ 
 .get-spotify:hover {
-  background-color: #2e2e2e;
-  color: wheat;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   transition: 0.3s ease-in-out;
 }
 
@@ -463,8 +463,10 @@ justify-content: center;
   width: 75px;
 }
 .login {
-  height: 50px;
+  height: 40px;
   width: 120px;
+  background-color: #2e2e2e;
+  color: wheat;
 }
 .spotify {
   background-color: black;
@@ -486,7 +488,8 @@ justify-content: center;
   width: 135px;
 }
 .singlog-leftright {
-  padding-bottom: 10px;
+  padding-top: 3px;
+  padding-bottom: 8px;
   position: sticky;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
