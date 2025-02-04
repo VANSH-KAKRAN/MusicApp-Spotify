@@ -279,7 +279,7 @@ function Menu({ toggle }) {
           <div className="last">
             <div className="ready">Ready? Let’s play.</div>
             <button onClick={toggle} className="get-spotify last-button">
-              Get Spotify free
+              Get inside Spotify 
             </button>
           </div>
         </div>
