@@ -92,7 +92,7 @@ function Menu({ toggle }) {
               Play millions of songs <br /> and podcasts, for free.
             </div>
             <button onClick={toggle} className="get-spotify">
-              Get Spotify Free
+              Get inside Spotify
             </button>
           </div>
         </div>
